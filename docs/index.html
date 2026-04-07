@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alabaster ADU — 원스탑 ADU 솔루션 | 워싱턴주 ADU 전문 컨설팅</title>
+  <meta name="description" content="워싱턴주 ADU 전문 컨설팅. 부지 검토부터 금융 구조, 허가, 시공까지 한 번에. 무료 사전 검토 신청." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* ── Language Toggle ── */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    /* lang-toggle 스타일은 css/style.css에서 관리 */
+    .mobile-lang-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 20px 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .mobile-lang-row .lang-btn {
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+    }
+    .mobile-lang-row .lang-btn.active {
+      background: #2d6a4f;
+      color: #fff !important;
+    }
+    .mobile-lang-row .lang-divider {
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ── Logo Image ── */
+    .logo-mark-img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      display: block;
+      border-radius: 8px;
+      /* 흰 배경 PNG → 항상 흰 배경 박스로 감싸서 표시 */
+      background: #ffffff;
+      padding: 4px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s;
+    }
+    header.scrolled .logo-mark-img {
+      box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    }
+    .footer-logo-mark-img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      display: block;
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 3px;
+      opacity: 0.92;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================
+     HEADER / NAV
+     ============================================ -->
+<header id="header">
+  <nav class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="images/logo.png" alt="Alabaster ADU Logo" class="logo-mark-img" />
+      <div class="logo-text">
+        <span class="logo-name">Alabaster</span>
+        <span class="logo-sub">ADU Solutions</span>
+      </div>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="#about-adu" class="nav-link" data-i18n="nav.about">ADU란?</a></li>
+      <li><a href="#adu-types" class="nav-link" data-i18n="nav.types">가능 유형</a></li>
+      <li><a href="#process" class="nav-link" data-i18n="nav.process">진행 절차</a></li>
+      <li><a href="#services" class="nav-link" data-i18n="nav.services">서비스</a></li>
+      <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta open-modal" data-i18n="nav.cta">무료 상담 신청</a></li>
+    </ul>
+
+    <!-- Right side: lang toggle + hamburger -->
+    <div class="nav-right">
+      <div class="lang-toggle" id="langToggle">
+        <button class="lang-btn active" data-lang="ko">한국어</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">English</button>
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-lang-row">
+    <button class="lang-btn active" data-lang="ko">한국어</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-btn" data-lang="en">English</button>
+  </div>
+  <a href="#about-adu" class="mobile-nav-link" data-close-menu data-i18n="nav.about">ADU란?</a>
+  <a href="#adu-types" class="mobile-nav-link" data-close-menu data-i18n="nav.types">가능 유형</a>
+  <a href="#process" class="mobile-nav-link" data-close-menu data-i18n="nav.process">진행 절차</a>
+  <a href="#services" class="mobile-nav-link" data-close-menu data-i18n="nav.services">서비스</a>
+  <a href="#faq" class="mobile-nav-link" data-close-menu data-i18n="nav.faq">FAQ</a>
+  <a href="#contact" class="mobile-nav-cta open-modal" data-close-menu data-i18n="nav.cta">무료 상담 신청</a>
+</div>
+
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section id="hero">
+  <div class="hero-inner">
+    <!-- Left Content -->
+    <div class="hero-content">
+      <div class="hero-eyebrow animate-in">
+        <i class="fa-solid fa-house-chimney"></i>
+        <span data-i18n="hero.eyebrow">원스탑 ADU 솔루션</span>
+      </div>
+
+      <h1 class="hero-h1 animate-in animate-in-delay-1" data-i18n-html="hero.h1">
+        부지 검토부터<br />
+        공사비 융자, 허가,<br />
+        <em>시공까지 한 번에</em>
+      </h1>
+
+      <p class="hero-desc animate-in animate-in-delay-2" data-i18n-html="hero.desc">
+        내 부지에 ADU가 가능한지, 비용은 어느 정도인지,<br />
+        융자까지 가능한지 — 한국어로 편하게 확인하세요.<br />
+        워싱턴주 ADU 전문 컨설팅, Alabaster.
+      </p>
+
+      <div class="hero-cta-group animate-in animate-in-delay-2">
+        <a href="#contact" class="btn btn-primary btn-lg open-modal">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span data-i18n="hero.cta1">무료 ADU 사전 검토 신청</span>
+        </a>
+        <a href="#checklist" class="btn btn-secondary btn-lg">
+          <i class="fa-solid fa-map-pin"></i>
+          <span data-i18n="hero.cta2">내 부지 가능 여부 확인하기</span>
+        </a>
+      </div>
+
+      <div class="hero-badges animate-in animate-in-delay-3">
+        <span class="badge">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span data-i18n="hero.badge1">조닝·부지 검토</span>
+        </span>
+        <span class="badge">
+          <i class="fa-solid fa-building-columns"></i>
+          <span data-i18n="hero.badge2">금융 구조 안내</span>
+        </span>
+        <span class="badge">
+          <i class="fa-solid fa-file-signature"></i>
+          <span data-i18n="hero.badge3">허가·시공 관리</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Right Visual -->
+    <div class="hero-visual animate-in animate-in-delay-2">
+      <div class="hero-image-wrap">
+        <img
+          src="images/hero-adu-new.jpg"
+          alt="워싱턴주 ADU 별채 주택 — Alabaster ADU Solutions"
+          style="width:100%; height:100%; object-fit:cover; display:block;"
+        />
+      </div>
+
+      <div class="hero-process-card">
+        <div class="card-label" data-i18n="hero.card.label">6단계 원스탑 프로세스</div>
+        <div class="process-mini-steps">
+          <div class="process-mini-step">
+            <span class="step-dot">1</span><span data-i18n="hero.step1">부지 검토</span>
+          </div>
+          <div class="process-mini-step">
+            <span class="step-dot">2</span><span data-i18n="hero.step2">예산·금융</span>
+          </div>
+          <div class="process-mini-step">
+            <span class="step-dot">3</span><span data-i18n="hero.step3">설계·허가</span>
+          </div>
+          <div class="process-mini-step">
+            <span class="step-dot">4</span><span data-i18n="hero.step4">시공·완공</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     ADU INTRO SECTION
+     ============================================ -->
+<section id="about-adu" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-i18n="about.label">WHAT IS ADU</span>
+      <h2 class="section-title" data-i18n="about.title">ADU란 무엇인가요?</h2>
+      <p class="section-desc" data-i18n-html="about.desc">
+        <strong>ADU(Accessory Dwelling Unit)</strong>는 기존 주택이 있는 같은 부지 안에
+        추가로 만드는 독립형 주거 유닛입니다. 별채, 차고 개조, 지하층 전환 등
+        다양한 방식으로 만들 수 있으며, 독립된 생활 공간으로 사용됩니다.
+      </p>
+    </div>
+
+    <div class="adu-feature-cards">
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon"><i class="fa-solid fa-bed"></i></div>
+        <div class="feature-title" data-i18n="feat1.title">독립된 수면 공간</div>
+        <div class="feature-desc" data-i18n="feat1.desc">침실 등 독립된 수면 공간을 갖춘 완전한 거주 유닛</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon"><i class="fa-solid fa-shower"></i></div>
+        <div class="feature-title" data-i18n="feat2.title">욕실·화장실</div>
+        <div class="feature-desc" data-i18n="feat2.desc">별도의 욕실 및 화장실을 갖추어 독립적 생활 가능</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div class="feature-title" data-i18n="feat3.title">주방·조리 시설</div>
+        <div class="feature-desc" data-i18n="feat3.desc">독립된 부엌 또는 조리 시설이 포함된 완결된 공간</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon"><i class="fa-solid fa-door-open"></i></div>
+        <div class="feature-title" data-i18n="feat4.title">독립 출입 동선</div>
+        <div class="feature-desc" data-i18n="feat4.desc">본채와 별도의 출입문을 통해 독립적으로 드나들 수 있는 구조</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon"><i class="fa-solid fa-house-user"></i></div>
+        <div class="feature-title" data-i18n="feat5.title">독립 생활 기능</div>
+        <div class="feature-desc" data-i18n="feat5.desc">본채와 분리된 완전한 독립 생활이 가능한 거주 유닛</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon"><i class="fa-solid fa-file-contract"></i></div>
+        <div class="feature-title" data-i18n="feat6.title">허가 기반 합법 건축</div>
+        <div class="feature-desc" data-i18n="feat6.desc">관할 구청 허가를 통해 합법적으로 신축 또는 전환 가능</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     WHY ADU NOW SECTION
+     ============================================ -->
+<section id="why-adu" class="section section-ivory">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-i18n="why.label">WHY NOW</span>
+      <h2 class="section-title" data-i18n="why.title">왜 지금 ADU를 검토해야 할까요?</h2>
+      <p class="section-desc" data-i18n="why.desc">
+        법규 완화 흐름, 주택 수요 증가, 자산 전략의 변화 속에서
+        ADU는 워싱턴주 주택 소유자에게 현실적인 옵션이 되고 있습니다.
+      </p>
+    </div>
+
+    <div class="why-cards">
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon"><i class="fa-solid fa-expand"></i></div>
+        <div class="why-content">
+          <h3 class="why-title" data-i18n="why1.title">부지 활용도 확대</h3>
+          <p class="why-desc" data-i18n="why1.desc">
+            이미 소유한 부지의 활용 가능성을 높일 수 있습니다.
+            기존 차고, 지하실, 빈 마당 등 활용되지 않던 공간을
+            생산적인 거주 공간으로 전환하는 방법을 검토해볼 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+        <div class="why-content">
+          <h3 class="why-title" data-i18n="why2.title">임대수익 가능성</h3>
+          <p class="why-desc" data-i18n="why2.desc">
+            완공 후 임대를 통해 월 임대 수익을 기대해볼 수 있습니다.
+            워싱턴주 주요 도시의 주거 수요를 고려할 때,
+            ADU는 임대 자산으로서의 가능성을 검토해볼 만한 옵션입니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <div class="why-content">
+          <h3 class="why-title" data-i18n="why3.title">자산가치·활용도 상승 가능성</h3>
+          <p class="why-desc" data-i18n="why3.desc">
+            ADU가 포함된 부지는 향후 매각 시 활용 가능성이 더 높은
+            자산으로 인식될 수 있습니다. 다양한 활용 방식을 통해
+            장기적 자산 전략을 검토해보실 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-card reveal reveal-delay-4">
+        <div class="why-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="why-content">
+          <h3 class="why-title" data-i18n="why4.title">법규 완화 흐름</h3>
+          <p class="why-desc" data-i18n="why4.desc">
+            워싱턴주는 주거 부족 문제 해결을 위해 ADU 관련
+            규정을 완화하는 방향으로 법령을 개정해왔습니다.
+            이 흐름이 어떤 의미인지, 내 부지에 어떻게 적용되는지
+            확인해보는 것이 좋습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     WA STATE LAW SECTION
+     ============================================ -->
+<section id="wa-law" class="section">
+  <div class="container">
+    <div class="law-layout">
+      <div class="law-left reveal">
+        <span class="section-label" data-i18n="law.label">WA STATE LAW</span>
+        <h2 class="section-title" data-i18n-html="law.title">워싱턴주 ADU 법령,<br />무엇이 달라졌나요?</h2>
+        <p class="law-description" data-i18n="law.desc">
+          워싱턴주는 최근 주거 부족 문제를 해결하기 위해
+          ADU 관련 법령을 지속적으로 완화하는 방향으로 개정해왔습니다.
+          다만 이는 주(State) 차원의 방향이며, 실제 적용은
+          거주 지역의 city/county 규정을 함께 확인해야 합니다.
+        </p>
+
+        <div class="law-note-box">
+          <h4><i class="fa-solid fa-triangle-exclamation" style="color:var(--color-gold);margin-right:6px;"></i><span data-i18n="law.note.title">중요 안내</span></h4>
+          <p data-i18n="law.note.desc">
+            아래 내용은 일반적인 방향성을 안내하는 것으로,
+            모든 부지에 자동 적용되지 않습니다.
+            조닝, UGA 여부, sewer/septic 연결, Critical Area 등
+            부지별 조건을 반드시 사전에 검토하시기 바랍니다.
+          </p>
+        </div>
+
+        <div class="law-cta-wrap">
+          <a href="#contact" class="btn btn-primary open-modal">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span data-i18n="law.cta">내 부지 검토 요청하기</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="law-right">
+        <div class="law-checklist reveal reveal-delay-1">
+          <div class="law-item active">
+            <div class="law-check"><i class="fa-solid fa-check" style="font-size:11px;"></i></div>
+            <div class="law-item-content">
+              <div class="law-item-title" data-i18n="law1.title">복수 ADU 허용 방향 확대</div>
+              <div class="law-item-desc" data-i18n="law1.desc">단독주택 부지에 1개 이상의 ADU를 허용하는 방향으로 법령이 변화하고 있습니다.</div>
+            </div>
+          </div>
+
+          <div class="law-item">
+            <div class="law-check"><i class="fa-solid fa-check" style="font-size:11px;"></i></div>
+            <div class="law-item-content">
+              <div class="law-item-title" data-i18n="law2.title">Owner-Occupancy 의무 완화 방향</div>
+              <div class="law-item-desc" data-i18n="law2.desc">집주인이 반드시 같은 부지에 거주해야 하는 의무가 완화되는 추세입니다.</div>
+            </div>
+          </div>
+
+          <div class="law-item">
+            <div class="law-check"><i class="fa-solid fa-check" style="font-size:11px;"></i></div>
+            <div class="law-item-content">
+              <div class="law-item-title" data-i18n="law3.title">면적 제한 완화 흐름</div>
+              <div class="law-item-desc" data-i18n="law3.desc">ADU 최대 면적 제한이 완화되어 더 실용적인 규모의 유닛 설계가 가능해지고 있습니다.</div>
+            </div>
+          </div>
+
+          <div class="law-item">
+            <div class="law-check"><i class="fa-solid fa-check" style="font-size:11px;"></i></div>
+            <div class="law-item-content">
+              <div class="law-item-title" data-i18n="law4.title">주차 규정 완화 가능</div>
+              <div class="law-item-desc" data-i18n="law4.desc">일부 지역에서 ADU 건축 시 추가 주차 공간 의무 조항이 완화되고 있습니다.</div>
+            </div>
+          </div>
+
+          <div class="law-item">
+            <div class="law-check"><i class="fa-solid fa-check" style="font-size:11px;"></i></div>
+            <div class="law-item-content">
+              <div class="law-item-title" data-i18n="law5.title">기존 구조물 전환 허용 강화</div>
+              <div class="law-item-desc" data-i18n="law5.desc">차고, 지하실, 다락 등 기존 구조물을 ADU로 전환하는 허용 범위가 넓어지고 있습니다.</div>
+            </div>
+          </div>
+
+          <div class="law-item">
+            <div class="law-check"><i class="fa-solid fa-check" style="font-size:11px;"></i></div>
+            <div class="law-item-content">
+              <div class="law-item-title" data-i18n="law6.title">개발부담금 제한 논의</div>
+              <div class="law-item-desc" data-i18n="law6.desc">ADU에 부과되는 각종 비용 및 부담금 기준을 제한하는 방향의 법률적 논의가 진행 중입니다.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     ADU TYPES SECTION
+     ============================================ -->
+<section id="adu-types" class="section section-ivory">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="section-label" data-i18n="types.label">ADU TYPES</span>
+      <h2 class="section-title" data-i18n="types.title">어떤 유형의 ADU가 가능할까요?</h2>
+      <p class="section-desc" data-i18n="types.desc">
+        부지 조건과 목적에 따라 다양한 유형의 ADU를 검토할 수 있습니다.
+        어떤 유형이 내 상황에 적합한지 함께 확인해보세요.
+      </p>
+    </div>
+
+    <div class="type-cards">
+      <div class="type-card reveal reveal-delay-1">
+        <div class="type-card-image" style="background: #1e4d34; position:relative;">
+          <img src="images/type-detached.jpg" alt="독립 별채 ADU" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+          <span class="type-tag">Detached</span>
+        </div>
+        <div class="type-card-body">
+          <div class="type-card-title" data-i18n="type1.title">독립 별채 ADU</div>
+          <div class="type-card-desc" data-i18n="type1.desc">본채와 완전히 분리된 독립 건물로 마당에 신축하는 유형</div>
+          <div class="type-card-fit"><i class="fa-solid fa-check-circle"></i> <span data-i18n="type1.fit">넓은 마당이 있는 부지에 적합</span></div>
+        </div>
+      </div>
+
+      <div class="type-card reveal reveal-delay-2">
+        <div class="type-card-image" style="background: #1a2640; position:relative;">
+          <img src="images/type-attached.jpg" alt="부속 증축형 ADU" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+          <span class="type-tag">Attached</span>
+        </div>
+        <div class="type-card-body">
+          <div class="type-card-title" data-i18n="type2.title">부속 증축형 ADU</div>
+          <div class="type-card-desc" data-i18n="type2.desc">본채에 연결된 형태로 증축하여 별도 출입구를 갖는 유형</div>
+          <div class="type-card-fit"><i class="fa-solid fa-check-circle"></i> <span data-i18n="type2.fit">부지가 넓지 않아도 검토 가능</span></div>
+        </div>
+      </div>
+
+      <div class="type-card reveal reveal-delay-3">
+        <div class="type-card-image" style="background: #3d2b1f; position:relative;">
+          <img src="images/type-garage.jpg" alt="차고 전환형 ADU" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+          <span class="type-tag">Garage Conversion</span>
+        </div>
+        <div class="type-card-body">
+          <div class="type-card-title" data-i18n="type3.title">차고 전환형 ADU</div>
+          <div class="type-card-desc" data-i18n="type3.desc">기존 차고 공간을 리모델링해 거주 공간으로 전환하는 유형</div>
+          <div class="type-card-fit"><i class="fa-solid fa-check-circle"></i> <span data-i18n="type3.fit">기존 차고 보유 시 비용 효율적</span></div>
+        </div>
+      </div>
+
+      <div class="type-card reveal reveal-delay-1">
+        <div class="type-card-image" style="background: #2b1a3d; position:relative;">
+          <img src="images/type-basement.jpg" alt="지하층 전환형 ADU" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+          <span class="type-tag">Basement</span>
+        </div>
+        <div class="type-card-body">
+          <div class="type-card-title" data-i18n="type4.title">지하층 전환형 ADU</div>
+          <div class="type-card-desc" data-i18n="type4.desc">기존 지하실 공간을 리모델링해 독립 거주 공간으로 만드는 유형</div>
+          <div class="type-card-fit"><i class="fa-solid fa-check-circle"></i> <span data-i18n="type4.fit">지하층 보유 주택에 적합</span></div>
+        </div>
+      </div>
+
+      <div class="type-card reveal reveal-delay-2">
+        <div class="type-card-image" style="background: #1a3d2b; position:relative;">
+          <img src="images/type-above-garage.jpg" alt="차고 위층 ADU" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+          <span class="type-tag">Above Garage</span>
+        </div>
+        <div class="type-card-body">
+          <div class="type-card-title" data-i18n="type5.title">차고 위층 ADU</div>
+          <div class="type-card-desc" data-i18n="type5.desc">차고 상층부 공간을 활용해 독립 주거 유닛을 만드는 유형</div>
+          <div class="type-card-fit"><i class="fa-solid fa-check-circle"></i> <span data-i18n="type5.fit">마당 공간 확보에 유리</span></div>
+        </div>
+      </div>
+
+      <div class="type-card reveal reveal-delay-3">
+        <div class="type-card-image" style="background: #3d1a1a; position:relative;">
+          <img src="images/type-addition.jpg" alt="홈 어디션형 ADU" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+          <span class="type-tag">Addition</span>
+        </div>
+        <div class="type-card-body">
+          <div class="type-card-title" data-i18n="type6.title">홈 어디션형 ADU</div>
+          <div class="type-card-desc" data-i18n="type6.desc">본채에 새로운 공간을 추가 증축하여 ADU를 만드는 유형</div>
+          <div class="type-card-fit"><i class="fa-solid fa-check-circle"></i> <span data-i18n="type6.fit">본채 구조 활용 가능한 경우</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     USE CASES SECTION
+     ============================================ -->
+<section id="use-cases" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-i18n="use.label">USE CASES</span>
+      <h2 class="section-title" data-i18n="use.title">ADU는 이렇게 활용할 수 있습니다</h2>
+      <p class="section-desc" data-i18n="use.desc">
+        ADU는 단순한 증축이 아니라 주거 전략이자 자산 활용 방법입니다.
+        내 상황에 맞는 활용 시나리오를 찾아보세요.
+      </p>
+    </div>
+
+    <div class="usecase-cards">
+      <div class="usecase-card reveal reveal-delay-1">
+        <div class="usecase-icon">💰</div>
+        <span class="usecase-label label-rental">Rental</span>
+        <h3 class="usecase-title" data-i18n="use1.title">임대수익형</h3>
+        <p class="usecase-desc" data-i18n="use1.desc">
+          장기 임대 또는 단기 임대를 통해 추가 임대 소득을 기대해볼 수 있습니다.
+          모기지 부담 완화, 생활비 보완 등 다양한 재무적 효과를 검토해보세요.
+        </p>
+      </div>
+
+      <div class="usecase-card reveal reveal-delay-2">
+        <div class="usecase-icon">👨‍👩‍👧‍👦</div>
+        <span class="usecase-label label-family">Family</span>
+        <h3 class="usecase-title" data-i18n="use2.title">가족 거주형</h3>
+        <p class="usecase-desc" data-i18n="use2.desc">
+          부모님, 성인 자녀, 친인척이 같은 부지 안에서 가까이 살면서도
+          각자의 독립적인 공간을 유지할 수 있는 멀티제너레이션 주거 방식입니다.
+        </p>
+      </div>
+
+      <div class="usecase-card reveal reveal-delay-3">
+        <div class="usecase-icon">🔐</div>
+        <span class="usecase-label label-privacy">Privacy</span>
+        <h3 class="usecase-title" data-i18n="use3.title">세대 분리형</h3>
+        <p class="usecase-desc" data-i18n="use3.desc">
+          같은 부지 안에서 완전히 독립된 별채를 통해 세대 간 프라이버시를
+          확보하면서도 가족 가까이 거주할 수 있는 형태입니다.
+        </p>
+      </div>
+
+      <div class="usecase-card reveal reveal-delay-1">
+        <div class="usecase-icon">🔄</div>
+        <span class="usecase-label label-flex">Flex Use</span>
+        <h3 class="usecase-title" data-i18n="use4.title">미래 대비형</h3>
+        <p class="usecase-desc" data-i18n="use4.desc">
+          지금 당장 사용하지 않더라도 향후 필요에 따라 임대, 가족 거주,
+          재택근무 공간 등으로 유연하게 활용할 수 있는 장기적 선택입니다.
+        </p>
+      </div>
+
+      <div class="usecase-card reveal reveal-delay-2">
+        <div class="usecase-icon">📈</div>
+        <span class="usecase-label label-asset">Long-term Asset</span>
+        <h3 class="usecase-title" data-i18n="use5.title">장기 자산 전략형</h3>
+        <p class="usecase-desc" data-i18n="use5.desc">
+          ADU가 있는 부지는 매각 시 다양한 활용 가능성으로 시장에서
+          주목받을 수 있습니다. 장기적 자산 포트폴리오 관점에서 검토해보세요.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     PROCESS SECTION
+     ============================================ -->
+<section id="process" class="section section-navy">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label section-label--light" data-i18n="proc.label">PROCESS</span>
+      <h2 class="section-title section-title--white" data-i18n="proc.title">ADU는 어떤 순서로 진행되나요?</h2>
+      <p class="section-desc section-desc--white" data-i18n="proc.desc">
+        복잡해 보이는 ADU 프로젝트, 단계별로 정리하면 훨씬 명확해집니다.
+        Alabaster가 각 단계에서 함께합니다.
+      </p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-number-wrap">
+          <div class="step-number">01</div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title" style="color:#fff;" data-i18n="proc1.title">부지 적합성 및 조닝 검토</h3>
+          <p class="step-desc" style="color:rgba(255,255,255,0.7);" data-i18n="proc1.desc">
+            부지 주소와 기본 정보를 바탕으로 ADU 건축이 가능한 조건인지 확인합니다.
+            조닝, UGA(도시성장경계), lot size, sewer/septic 여부 등 핵심 항목을 검토합니다.
+          </p>
+          <div class="step-checks">
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc1.c1">조닝 코드 확인</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc1.c2">Lot 크기 검토</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc1.c3">인프라 조건 확인</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-number-wrap">
+          <div class="step-number">02</div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title" style="color:#fff;" data-i18n="proc2.title">예산 및 금융 구조 검토</h3>
+          <p class="step-desc" style="color:rgba(255,255,255,0.7);" data-i18n="proc2.desc">
+            예상 공사비 범위를 파악하고, 융자 가능 여부 및 금융 구조를 함께 검토합니다.
+            ADU 전용 융자 상품, 리파이낸싱 가능성 등 다양한 옵션을 안내해드립니다.
+          </p>
+          <div class="step-checks">
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc2.c1">예상 공사비 산정</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc2.c2">융자 옵션 검토</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc2.c3">사업성 분석</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-number-wrap">
+          <div class="step-number">03</div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title" style="color:#fff;" data-i18n="proc3.title">설계 및 인허가 준비</h3>
+          <p class="step-desc" style="color:rgba(255,255,255,0.7);" data-i18n="proc3.desc">
+            검증된 건축사 파트너와 연계하여 ADU 설계를 진행하고,
+            허가 신청에 필요한 도면 및 서류를 준비합니다.
+          </p>
+          <div class="step-checks">
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc3.c1">건축사 파트너 연계</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc3.c2">설계 도면 작성</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc3.c3">허가 서류 준비</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-number-wrap">
+          <div class="step-number">04</div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title" style="color:#fff;" data-i18n="proc4.title">허가 접수 및 보완 대응</h3>
+          <p class="step-desc" style="color:rgba(255,255,255,0.7);" data-i18n="proc4.desc">
+            관할 구청에 허가를 접수하고, 심사 과정에서 발생하는 보완 요청 및
+            수정 사항에 신속하게 대응합니다. 허가 취득까지 전 과정을 지원합니다.
+          </p>
+          <div class="step-checks">
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc4.c1">허가 접수 대행</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc4.c2">보완 사항 대응</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc4.c3">진행 상황 모니터링</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-number-wrap">
+          <div class="step-number">05</div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title" style="color:#fff;" data-i18n="proc5.title">시공 및 공정 관리</h3>
+          <p class="step-desc" style="color:rgba(255,255,255,0.7);" data-i18n="proc5.desc">
+            검증된 시공 파트너와 연계하여 공사를 진행합니다.
+            공정별 진행 상황을 지속적으로 모니터링하며 품질과 일정을 관리합니다.
+          </p>
+          <div class="step-checks">
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc5.c1">시공사 파트너 연계</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc5.c2">공정 일정 관리</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc5.c3">품질 체크포인트</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-number-wrap">
+          <div class="step-number">06</div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title" style="color:#fff;" data-i18n="proc6.title">완공 후 활용 계획</h3>
+          <p class="step-desc" style="color:rgba(255,255,255,0.7);" data-i18n="proc6.desc">
+            ADU 완공 이후 임대 운영, 가족 입주, 향후 매각 등 활용 계획을
+            함께 정리합니다. 완공이 끝이 아니라 시작이 되도록 도와드립니다.
+          </p>
+          <div class="step-checks">
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc6.c1">임대 운영 가이드</span>
+            </span>
+            <span class="step-check" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);">
+              <i class="fa-solid fa-check" style="color:var(--color-gold-light);"></i><span data-i18n="proc6.c2">자산 활용 전략</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     CHECKLIST SECTION
+     ============================================ -->
+<section id="checklist" class="section section-beige">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-i18n="chk.label">CHECKLIST</span>
+      <h2 class="section-title" data-i18n="chk.title">ADU를 준비하려면 무엇부터 해야 할까요?</h2>
+    </div>
+    <p class="checklist-intro reveal" data-i18n="chk.intro">
+      상담 전에 아래 정보를 미리 파악해두시면 더 빠르고 정확한 사전 검토가 가능합니다.
+      모든 항목을 다 알지 못해도 괜찮습니다. 함께 확인해드립니다.
+    </p>
+
+    <div class="checklist-grid">
+      <label class="checklist-item reveal reveal-delay-1">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk1.title">부지 주소</div>
+          <div class="checklist-hint" data-i18n="chk1.hint">조닝 및 UGA 여부 확인에 필수</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-2">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk2.title">Lot Size (부지 면적)</div>
+          <div class="checklist-hint" data-i18n="chk2.hint">ADU 허용 면적 계산의 기준</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-1">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk3.title">현재 주택 면적 및 연식</div>
+          <div class="checklist-hint" data-i18n="chk3.hint">기존 구조 활용 가능성 판단</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-2">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk4.title">차고 / 지하실 / 별채 여부</div>
+          <div class="checklist-hint" data-i18n="chk4.hint">기존 구조물 전환 가능성 검토</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-1">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk5.title">Sewer / Septic 연결 여부</div>
+          <div class="checklist-hint" data-i18n="chk5.hint">인프라 확장 비용 및 가능성에 영향</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-2">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk6.title">경사 / 습지 등 지형 특이사항</div>
+          <div class="checklist-hint" data-i18n="chk6.hint">Critical Area 여부 및 공사 난이도 판단</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-1">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk7.title">ADU 활용 목적</div>
+          <div class="checklist-hint" data-i18n="chk7.hint">임대 / 가족 거주 / 자산 전략 등</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-2">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk8.title">예산 범위 (대략)</div>
+          <div class="checklist-hint" data-i18n="chk8.hint">공사비 및 융자 가능 범위 파악에 도움</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-1">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk9.title">융자 관심 여부</div>
+          <div class="checklist-hint" data-i18n="chk9.hint">ADU 전용 융자 옵션 안내 여부 결정</div>
+        </div>
+      </label>
+
+      <label class="checklist-item reveal reveal-delay-2">
+        <input type="checkbox" />
+        <div class="checklist-box"><i class="fa-solid fa-check" style="font-size:12px;"></i></div>
+        <div class="checklist-text">
+          <div class="checklist-title" data-i18n="chk10.title">희망 ADU 유형</div>
+          <div class="checklist-hint" data-i18n="chk10.hint">별채 / 차고 개조 / 지하층 등</div>
+        </div>
+      </label>
+    </div>
+
+    <div class="checklist-cta reveal">
+      <h3 data-i18n="chk.cta.title">준비가 됐다면, 무료 사전 검토를 받아보세요</h3>
+      <p data-i18n="chk.cta.desc">모든 항목을 다 몰라도 괜찮습니다. 함께 확인해드립니다.</p>
+      <a href="#contact" class="btn btn-gold btn-lg open-modal">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span data-i18n="chk.cta.btn">무료 ADU 사전 검토 요청하기</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     SERVICES SECTION
+     ============================================ -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="section-label" data-i18n="svc.label">OUR SERVICES</span>
+      <h2 class="section-title" data-i18n="svc.title">Alabaster는 무엇을 도와드리나요?</h2>
+      <p class="section-desc" data-i18n="svc.desc">
+        부지 검토부터 예산 설계, 금융 구조, 허가, 시공 관리까지
+        ADU 프로젝트의 전 과정을 원스탑으로 안내해드립니다.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <h3 class="service-title" data-i18n="svc1.title">부지 적합성 검토</h3>
+        <p class="service-desc" data-i18n="svc1.desc">
+          조닝, UGA, lot size, sewer/septic 연결 여부, Critical Area 등
+          ADU 건축 가능성을 판단하는 핵심 조건들을 체계적으로 검토합니다.
+        </p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa-solid fa-calculator"></i></div>
+        <h3 class="service-title" data-i18n="svc2.title">예산·사업성 검토</h3>
+        <p class="service-desc" data-i18n="svc2.desc">
+          ADU 유형별 예상 공사비 범위를 파악하고, 임대 수익 가능성 및
+          전반적인 사업성을 함께 검토하여 현실적인 계획 수립을 돕습니다.
+        </p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <h3 class="service-title" data-i18n="svc3.title">금융 구조 검토</h3>
+        <p class="service-desc" data-i18n="svc3.desc">
+          ADU 전용 융자, 리파이낸싱, HELoan/HELOC 등 다양한 금융 옵션을
+          안내해드립니다. 융자 가능 여부 및 조건을 함께 확인해보세요.
+        </p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
+        <h3 class="service-title" data-i18n="svc4.title">허가·진행 프로세스 안내</h3>
+        <p class="service-desc" data-i18n="svc4.desc">
+          설계부터 허가 접수, 보완 대응까지 복잡한 인허가 과정을
+          단계별로 안내하고 파트너 건축사와 연계하여 지원합니다.
+        </p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+        <h3 class="service-title" data-i18n="svc5.title">검증된 파트너 연계</h3>
+        <p class="service-desc" data-i18n="svc5.desc">
+          건축사, 시공사, 금융 파트너 등 ADU 프로젝트에 필요한
+          전문 파트너 네트워크를 통해 신뢰할 수 있는 팀을 연결해드립니다.
+        </p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:48px;" class="reveal">
+      <a href="#contact" class="btn btn-primary btn-lg open-modal">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span data-i18n="svc.btn">서비스 상담 신청하기</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FAQ SECTION
+     ============================================ -->
+<section id="faq" class="section section-ivory">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="section-label" data-i18n="faq.label">FAQ</span>
+      <h2 class="section-title" data-i18n="faq.title">자주 묻는 질문</h2>
+      <p class="section-desc" data-i18n="faq.desc">
+        ADU를 처음 접하는 분들이 가장 많이 물어보는 질문들을 모았습니다.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item active reveal">
+        <div class="faq-question">
+          <span class="faq-q-text" data-i18n="faq1.q">Q. 제 집에도 ADU를 지을 수 있나요?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p data-i18n="faq1.a">
+            ADU 건축 가능 여부는 부지의 조닝, UGA(도시성장경계) 포함 여부, lot size,
+            sewer/septic 연결 조건, Critical Area 여부 등 다양한 요소에 따라 달라집니다.
+            워싱턴주 전체에 일괄 적용되는 기준이 아니라 지역별, 부지별로 확인이 필요합니다.
+            무료 사전 검토를 통해 빠르게 가능 여부를 확인해보세요.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span class="faq-q-text" data-i18n="faq2.q">Q. 워싱턴주에서 ADU를 몇 개까지 지을 수 있나요?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p data-i18n="faq2.a">
+            워싱턴주 법령은 복수의 ADU를 허용하는 방향으로 개정되어 왔으나,
+            실제 허용 개수는 해당 city/county의 조닝 코드에 따라 달라집니다.
+            일부 지역은 1개, 일부는 2개 이상을 허용하는 경우도 있습니다.
+            거주 지역의 규정을 확인하는 것이 선행되어야 합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span class="faq-q-text" data-i18n="faq3.q">Q. 반드시 집주인이 같은 부지에 살아야 하나요?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p data-i18n="faq3.a">
+            Owner-Occupancy(집주인 거주 의무) 규정은 지역에 따라 다르며,
+            워싱턴주 내 많은 지역에서 이 의무가 완화되는 추세입니다.
+            그러나 일부 지역에서는 여전히 적용될 수 있으므로,
+            해당 city/county 규정을 반드시 확인하셔야 합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span class="faq-q-text" data-i18n="faq4.q">Q. 차고를 ADU로 개조할 수 있나요?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p data-i18n="faq4.a">
+            가능한 경우가 많습니다. 기존 차고를 거주 공간으로 전환하는
+            Garage Conversion ADU는 비교적 비용 효율적인 방법 중 하나로 많이 검토됩니다.
+            다만 구조 검토, 단열·전기·배관 업그레이드, 허가 조건 충족 여부 등을
+            사전에 확인해야 합니다. 부지별 조건에 따라 가능 여부가 달라집니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span class="faq-q-text" data-i18n="faq5.q">Q. ADU를 지으면 주차 공간을 추가로 만들어야 하나요?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p data-i18n="faq5.a">
+            워싱턴주의 많은 지역에서 ADU 추가에 따른 의무 주차 공간 확보 규정이
+            완화되고 있습니다. 특히 대중교통 접근이 좋은 지역에서는 주차 규정이
+            더 유연하게 적용될 수 있습니다. 그러나 지역마다 다르므로 반드시 확인이 필요합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span class="faq-q-text" data-i18n="faq6.q">Q. ADU 공사 비용은 얼마나 드나요?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p data-i18n="faq6.a">
+            ADU 공사 비용은 유형, 규모, 위치, 설계 복잡도, 인프라 조건 등에 따라
+            큰 폭의 차이가 있습니다. 일반적으로 차고 전환형은 신축형보다 비용이 낮은 편이며,
+            신축 독립 별채의 경우 더 높은 비용이 드는 경향이 있습니다.
+            정확한 예산 범위는 부지 조건과 유형을 확인한 후 안내해드릴 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span class="faq-q-text" data-i18n="faq7.q">Q. ADU 건축을 위한 융자도 가능한가요?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p data-i18n="faq7.a">
+            네, 다양한 융자 옵션이 있습니다. ADU 전용 융자 프로그램, 기존 주택을 활용한
+            HELOC/HELoan, Cash-out Refinancing 등 상황에 따라 적합한 금융 구조가 다릅니다.
+            융자 가능 여부와 조건은 신청인의 자격, 금융기관 심사 기준, 주택 가치 등에 따라
+            달라지므로 개별 상담을 통해 확인하시기 바랍니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-cta reveal">
+      <p data-i18n="faq.cta.q">더 궁금한 점이 있으신가요?</p>
+      <a href="#contact" class="btn btn-primary open-modal">
+        <i class="fa-solid fa-comments"></i>
+        <span data-i18n="faq.cta.btn">상담 요청하기</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FINAL CTA SECTION
+     ============================================ -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-label reveal">
+      <i class="fa-solid fa-star"></i>
+      <span data-i18n="cta.label">무료 사전 검토</span>
+    </div>
+
+    <h2 class="contact-title reveal" data-i18n-html="cta.title">
+      무료 ADU 사전 검토를<br />받아보세요
+    </h2>
+
+    <p class="contact-desc reveal" data-i18n="cta.desc">
+      내 부지에 ADU가 가능한지, 예상 비용은 어느 정도인지,
+      융자 가능성은 있는지 — 한국어로 편하게 확인해보세요.
+    </p>
+
+    <div class="contact-cta-group reveal">
+      <a href="#" class="btn btn-gold btn-lg open-modal">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span data-i18n="cta.btn1">무료 상담 신청</span>
+      </a>
+      <a href="tel:+12065120959" class="btn btn-ghost btn-lg">
+        <i class="fa-solid fa-phone"></i>
+        <span data-i18n="cta.btn2">전화 문의하기</span>
+      </a>
+      <a href="mailto:contact@alabaster.llc" class="btn btn-ghost btn-lg">
+        <i class="fa-solid fa-envelope"></i>
+        <span data-i18n="cta.btn3">이메일 문의</span>
+      </a>
+    </div>
+
+    <div class="contact-info reveal">
+      <div class="contact-info-item">
+        <i class="fa-solid fa-location-dot"></i>
+        2412 1st Ave S, Seattle, WA 98134
+      </div>
+      <div class="contact-info-item">
+        <i class="fa-solid fa-bolt"></i>
+        <span data-i18n="cta.info2">실시간 상담 가능</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     DISCLAIMER
+     ============================================ -->
+<div class="disclaimer">
+  <div class="disclaimer-inner">
+    <p data-i18n="disclaimer">
+      <strong>면책 고지:</strong> 본 웹사이트의 모든 정보는 일반적인 안내 목적으로 제공되며, 법률·금융 자문을 구성하지 않습니다.
+      ADU 허가 가능 여부는 부지 조건, 관할 지역 규정, 인프라 조건 등에 따라 달라질 수 있으며, 동일한 결과를 보장하지 않습니다.
+      금융 조건은 신청인의 자격 요건 및 금융기관 심사 기준에 따라 달라질 수 있습니다.
+      최종 의사결정 전에 관련 전문가와 개별 상담을 받으시기 바랍니다.
+    </p>
+  </div>
+</div>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Alabaster ADU Logo" class="footer-logo-mark-img" />
+          <span class="footer-logo-name">Alabaster</span>
+        </div>
+        <p class="footer-tagline" data-i18n-html="footer.tagline">
+          워싱턴주 ADU 원스탑 솔루션.<br />
+          부지 검토부터 금융, 허가, 시공까지<br />
+          편하게 함께합니다.
+        </p>
+        <div class="footer-contact">
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(206) 512-0959</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>contact@alabaster.llc</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>2412 1st Ave S, Seattle, WA 98134</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title" data-i18n="footer.col1">서비스</h4>
+        <ul class="footer-links">
+          <li><a href="#about-adu" class="footer-link" data-i18n="footer.l1.1">ADU란 무엇인가</a></li>
+          <li><a href="#adu-types" class="footer-link" data-i18n="footer.l1.2">ADU 유형</a></li>
+          <li><a href="#process" class="footer-link" data-i18n="footer.l1.3">진행 절차</a></li>
+          <li><a href="#services" class="footer-link" data-i18n="footer.l1.4">Alabaster 서비스</a></li>
+          <li><a href="#checklist" class="footer-link" data-i18n="footer.l1.5">준비 체크리스트</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title" data-i18n="footer.col2">정보</h4>
+        <ul class="footer-links">
+          <li><a href="#why-adu" class="footer-link" data-i18n="footer.l2.1">왜 지금 ADU인가</a></li>
+          <li><a href="#wa-law" class="footer-link" data-i18n="footer.l2.2">워싱턴주 법령 안내</a></li>
+          <li><a href="#use-cases" class="footer-link" data-i18n="footer.l2.3">활용 시나리오</a></li>
+          <li><a href="#faq" class="footer-link" data-i18n="footer.l2.4">자주 묻는 질문</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title" data-i18n="footer.col3">상담</h4>
+        <ul class="footer-links">
+          <li><a href="#contact" class="footer-link open-modal" data-i18n="footer.l3.1">무료 사전 검토 신청</a></li>
+          <li><a href="tel:+12065120959" class="footer-link" data-i18n="footer.l3.2">전화 문의</a></li>
+          <li><a href="mailto:contact@alabaster.llc" class="footer-link" data-i18n="footer.l3.3">이메일 문의</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025 Alabaster ADU Solutions. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#" class="footer-legal-link" data-i18n="footer.privacy">개인정보처리방침</a>
+        <a href="#" class="footer-legal-link" data-i18n="footer.terms">이용약관</a>
+        <a href="#contact" class="footer-legal-link open-modal" data-i18n="footer.contact">문의하기</a>
+        <a href="admin.html" class="footer-legal-link" style="color:rgba(255,255,255,0.55);font-size:12px;border:1px solid rgba(255,255,255,0.25);padding:3px 10px;border-radius:4px;">🔒 관리자</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================
+     CONTACT MODAL
+     ============================================ -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="닫기">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="modal-title" id="modalTitle" data-i18n="modal.title">무료 ADU 사전 검토 신청</div>
+    <p class="modal-desc" data-i18n-html="modal.desc">
+      아래 정보를 입력하시면 담당 컨설턴트가 연락드립니다.<br />
+      <strong>모든 상담은 무료</strong>이며, 부담 없이 신청하세요.
+    </p>
+
+    <form id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="name"><span data-i18n="modal.name">이름</span> <span class="required">*</span></label>
+          <input type="text" id="name" class="form-input" placeholder="홍길동" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone"><span data-i18n="modal.phone">연락처</span> <span class="required">*</span></label>
+          <input type="tel" id="phone" class="form-input" placeholder="(206) 512-0959" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="email"><span data-i18n="modal.email">이메일</span> <span class="required">*</span></label>
+        <input type="email" id="email" class="form-input" placeholder="example@email.com" required />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="address"><span data-i18n="modal.address">부지 주소 (대략적으로도 가능)</span></label>
+        <input type="text" id="address" class="form-input" placeholder="Seattle, WA" />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="aduType"><span data-i18n="modal.aduType">관심 ADU 유형</span></label>
+          <select id="aduType" class="form-select">
+            <option value="" data-i18n="modal.opt.select">선택 (선택 사항)</option>
+            <option value="detached" data-i18n="modal.opt.detached">독립 별채 (Detached)</option>
+            <option value="attached" data-i18n="modal.opt.attached">부속 증축형 (Attached)</option>
+            <option value="garage" data-i18n="modal.opt.garage">차고 전환 (Garage Conversion)</option>
+            <option value="basement" data-i18n="modal.opt.basement">지하층 전환 (Basement)</option>
+            <option value="above-garage" data-i18n="modal.opt.above">차고 위층 (Above Garage)</option>
+            <option value="addition" data-i18n="modal.opt.addition">홈 어디션 (Addition)</option>
+            <option value="unknown" data-i18n="modal.opt.unknown">아직 모르겠음</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="budget"><span data-i18n="modal.budget">예산 범위</span></label>
+          <select id="budget" class="form-select">
+            <option value="" data-i18n="modal.opt.select">선택 (선택 사항)</option>
+            <option value="under-150k" data-i18n="modal.bud.1">$150,000 이하</option>
+            <option value="150-300k" data-i18n="modal.bud.2">$150,000 – $300,000</option>
+            <option value="300-500k" data-i18n="modal.bud.3">$300,000 – $500,000</option>
+            <option value="over-500k" data-i18n="modal.bud.4">$500,000 이상</option>
+            <option value="unknown" data-i18n="modal.opt.unknown">아직 모르겠음</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="financing"><span data-i18n="modal.financing">융자 상담 관심 여부</span></label>
+        <select id="financing" class="form-select">
+          <option value="" data-i18n="modal.opt.select">선택 (선택 사항)</option>
+          <option value="yes" data-i18n="modal.fin.yes">네, 융자 옵션이 궁금합니다</option>
+          <option value="no" data-i18n="modal.fin.no">아니요, 자가 자금으로 계획 중입니다</option>
+          <option value="unknown" data-i18n="modal.opt.unknown">아직 결정 못 했습니다</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="message"><span data-i18n="modal.message">상담 내용 / 추가 문의</span></label>
+        <textarea id="message" class="form-textarea" rows="3" placeholder="ADU와 관련해 궁금한 점이나 내 상황을 자유롭게 적어주세요."></textarea>
+      </div>
+
+      <button type="submit" class="form-submit">
+        <i class="fa-solid fa-paper-plane" style="margin-right:8px;"></i>
+        <span data-i18n="modal.submit">무료 사전 검토 신청하기</span>
+      </button>
+      <p id="formStatus" style="display:none; margin-top:12px; font-size:14px; line-height:1.6; color:#b42318;"></p>
+      <p class="form-note">
+        <i class="fa-solid fa-lock" style="margin-right:4px;"></i>
+        <span data-i18n="modal.privacy">개인정보는 상담 목적으로만 사용되며 외부에 제공되지 않습니다.</span>
+      </p>
+    </form>
+
+    <!-- Success Message -->
+    <div id="formSuccess" style="display:none; text-align:center; padding:40px 20px;">
+      <div style="font-size:56px; margin-bottom:16px;">✅</div>
+      <h3 style="font-size:22px; font-weight:800; color:var(--color-navy); margin-bottom:12px;" data-i18n="modal.success.title">신청이 완료되었습니다!</h3>
+      <p style="font-size:15px; color:var(--color-text-secondary); line-height:1.7;" data-i18n-html="modal.success.desc">
+        담당 컨설턴트가 1~2 영업일 내에<br />
+        연락드리겠습니다.<br /><br />
+        감사합니다! 🙏
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+/* ============================================
+   Alabaster ADU — Main JavaScript
+   ============================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ==========================================
+     1. STICKY HEADER
+     ========================================== */
+  const header = document.getElementById('header');
+
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+
+  /* ==========================================
+     2. MOBILE HAMBURGER MENU
+     ========================================== */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  const closeMenu = () => {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  const toggleMenu = () => {
+    const isOpen = mobileMenu.classList.contains('open');
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  };
+
+  if (hamburger) {
+    hamburger.addEventListener('click', toggleMenu);
+  }
+
+  document.querySelectorAll('[data-close-menu]').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+
+  /* ==========================================
+     3. SMOOTH SCROLL FOR NAV LINKS
+     ========================================== */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const href = anchor.getAttribute('href');
+      if (anchor.classList.contains('open-modal')) return;
+      if (href === '#' || href === '') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        const headerHeight = header ? header.offsetHeight : 80;
+        const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
+        window.scrollTo({ top, behavior: 'smooth' });
+        closeMenu();
+      }
+    });
+  });
+
+
+  /* ==========================================
+     4. SCROLL REVEAL ANIMATION
+     ========================================== */
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.08,
+    rootMargin: '0px 0px -30px 0px'
+  });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
+
+  /* ==========================================
+     5. FAQ ACCORDION
+     ========================================== */
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      faqItems.forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+
+
+  /* ==========================================
+     6. CONTACT MODAL
+     ========================================== */
+  const modal = document.getElementById('contactModal');
+  const modalClose = document.getElementById('modalClose');
+  const openModalBtns = document.querySelectorAll('.open-modal');
+
+  const openModal = (e) => {
+    e.preventDefault();
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('formSuccess');
+    if (form && success) {
+      form.style.display = 'block';
+      success.style.display = 'none';
+    }
+    setTimeout(() => {
+      const firstInput = modal.querySelector('input, select, textarea');
+      if (firstInput) firstInput.focus();
+    }, 100);
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  openModalBtns.forEach(btn => btn.addEventListener('click', openModal));
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.classList.contains('open')) {
+      closeModal();
+    }
+  });
+
+
+  /* ==========================================
+     7. CHECKLIST ITEMS
+     ========================================== */
+  const checklistItems = document.querySelectorAll('.checklist-item');
+
+  checklistItems.forEach(item => {
+    const checkbox = item.querySelector('input[type="checkbox"]');
+    const box = item.querySelector('.checklist-box');
+    if (!checkbox || !box) return;
+
+    const update = () => {
+      item.classList.toggle('checked', checkbox.checked);
+      const icon = box.querySelector('i');
+      if (icon) icon.style.display = checkbox.checked ? 'flex' : 'none';
+    };
+
+    const icon = box.querySelector('i');
+    if (icon) icon.style.display = 'none';
+
+    checkbox.addEventListener('change', update);
+
+    item.addEventListener('click', (e) => {
+      if (e.target !== checkbox) {
+        checkbox.checked = !checkbox.checked;
+        update();
+      }
+    });
+  });
+
+
+  /* ==========================================
+     8. WA LAW ITEM CLICK
+     ========================================== */
+  const lawItems = document.querySelectorAll('.law-item');
+  lawItems.forEach(item => {
+    item.addEventListener('click', () => {
+      lawItems.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+
+
+  /* ==========================================
+     9. SCROLL PROGRESS BAR
+     ========================================== */
+  const progressBar = document.createElement('div');
+  progressBar.style.cssText = `
+    position:fixed; top:0; left:0; height:3px;
+    background:linear-gradient(90deg, #2d6a4f, #c9a84c);
+    z-index:9999; transition:width 0.1s linear; width:0%;
+    pointer-events:none;
+  `;
+  document.body.appendChild(progressBar);
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = Math.min(progress, 100) + '%';
+  }, { passive: true });
+
+
+  /* ==========================================
+     10. TYPE CARD HOVER
+     ========================================== */
+  document.querySelectorAll('.type-card').forEach(card => {
+    const ill = card.querySelector('.type-illustration');
+    if (!ill) return;
+    ill.style.transition = 'all 0.3s ease';
+    card.addEventListener('mouseenter', () => {
+      ill.style.opacity = '0.8';
+      ill.style.transform = 'scale(1.1)';
+    });
+    card.addEventListener('mouseleave', () => {
+      ill.style.opacity = '0.5';
+      ill.style.transform = 'scale(1)';
+    });
+  });
+
+
+  /* ==========================================
+     11. FORM SUBMISSION
+     ========================================== */
+  const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxwmI7HS4tp2l9BGo9HlXwTsePus2w6eAYPWnjhR7xAxzziJHLk3tGjPLsByWk9brIALw/exec';
+  const DEFAULT_SUBMIT_LABEL = '<i class="fa-solid fa-paper-plane" style="margin-right:8px;"></i><span data-i18n="modal.submit">무료 사전 검토 신청하기</span>';
+  const SUBMIT_TIMEOUT_MS = 15000;
+
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('.form-submit');
+      const form = document.getElementById('contactForm');
+      const success = document.getElementById('formSuccess');
+      const status = document.getElementById('formStatus');
+
+      if (status) {
+        status.style.color = '#b42318';
+        status.style.display = 'none';
+        status.textContent = '';
+      }
+
+      if (!GOOGLE_APPS_SCRIPT_URL || GOOGLE_APPS_SCRIPT_URL.includes('PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEBAPP_URL_HERE')) {
+        if (status) {
+          status.textContent = 'Google Apps Script 웹앱 URL을 먼저 넣어주세요. index.html 안의 GOOGLE_APPS_SCRIPT_URL 값을 교체하면 됩니다.';
+          status.style.display = 'block';
+        }
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" style="margin-right:8px;"></i>처리 중...';
+      if (status) {
+        status.style.color = '#2d6a4f';
+        status.textContent = '제출 중입니다. 잠시만 기다려주세요...';
+        status.style.display = 'block';
+      }
+
+      const formData = {
+        name: document.getElementById('name').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        address: document.getElementById('address').value.trim(),
+        aduType: document.getElementById('aduType').value,
+        budget: document.getElementById('budget').value,
+        financing: document.getElementById('financing').value,
+        message: document.getElementById('message').value.trim(),
+        submittedAt: new Date().toISOString(),
+      };
+
+      try {
+        await submitToAppsScript(formData);
+
+        form.reset();
+        form.style.display = 'none';
+        success.style.display = 'block';
+      } catch (err) {
+        console.warn('Form submission failed:', err);
+        if (status) {
+          status.style.color = '#b42318';
+          status.textContent = '제출 중 문제가 발생했습니다. 잠시 후 다시 시도하시거나 직접 전화/이메일로 문의해주세요.';
+          status.style.display = 'block';
+        }
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = DEFAULT_SUBMIT_LABEL;
+      }
+    });
+  }
+
+  async function submitToAppsScript(formData) {
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
+
+    try {
+      await fetch(GOOGLE_APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(formData),
+        signal: controller.signal,
+      });
+    } finally {
+      window.clearTimeout(timeoutId);
+    }
+  }
+
+
+  console.log(
+    '%c🏡 Alabaster ADU Solutions\n%cWashington State ADU | Korean & English Support',
+    'font-size:16px; font-weight:bold; color:#2d6a4f;',
+    'font-size:12px; color:#4a5568;'
+  );
+
+
+  /* ==========================================
+     12. LANGUAGE SYSTEM
+         — Complete Translation Dictionary
+         — data-i18n / data-i18n-html approach
+     ========================================== */
+
+  const TRANSLATIONS = {
+    ko: {
+      // Nav
+      'nav.about':    'ADU란?',
+      'nav.types':    '가능 유형',
+      'nav.process':  '진행 절차',
+      'nav.services': '서비스',
+      'nav.faq':      'FAQ',
+      'nav.cta':      '무료 상담 신청',
+      // Hero
+      'hero.eyebrow':     '원스탑 ADU 솔루션',
+      'hero.h1':          '부지 검토부터<br />공사비 융자, 허가,<br /><em>시공까지 한 번에</em>',
+      'hero.desc':        '내 부지에 ADU가 가능한지, 비용은 어느 정도인지,<br />융자까지 가능한지 — 한국어로 편하게 확인하세요.<br />워싱턴주 ADU 전문 컨설팅, Alabaster.',
+      'hero.cta1':        '무료 ADU 사전 검토 신청',
+      'hero.cta2':        '내 부지 가능 여부 확인하기',
+      'hero.badge1':      '조닝·부지 검토',
+      'hero.badge2':      '금융 구조 안내',
+      'hero.badge3':      '허가·시공 관리',
+      'hero.card.label':  '6단계 원스탑 프로세스',
+      'hero.step1':       '부지 검토',
+      'hero.step2':       '예산·금융',
+      'hero.step3':       '설계·허가',
+      'hero.step4':       '시공·완공',
+      // About ADU
+      'about.label':  'WHAT IS ADU',
+      'about.title':  'ADU란 무엇인가요?',
+      'about.desc':   '<strong>ADU(Accessory Dwelling Unit)</strong>는 기존 주택이 있는 같은 부지 안에 추가로 만드는 독립형 주거 유닛입니다. 별채, 차고 개조, 지하층 전환 등 다양한 방식으로 만들 수 있으며, 독립된 생활 공간으로 사용됩니다.',
+      'feat1.title':  '독립된 수면 공간',
+      'feat1.desc':   '침실 등 독립된 수면 공간을 갖춘 완전한 거주 유닛',
+      'feat2.title':  '욕실·화장실',
+      'feat2.desc':   '별도의 욕실 및 화장실을 갖추어 독립적 생활 가능',
+      'feat3.title':  '주방·조리 시설',
+      'feat3.desc':   '독립된 부엌 또는 조리 시설이 포함된 완결된 공간',
+      'feat4.title':  '독립 출입 동선',
+      'feat4.desc':   '본채와 별도의 출입문을 통해 독립적으로 드나들 수 있는 구조',
+      'feat5.title':  '독립 생활 기능',
+      'feat5.desc':   '본채와 분리된 완전한 독립 생활이 가능한 거주 유닛',
+      'feat6.title':  '허가 기반 합법 건축',
+      'feat6.desc':   '관할 구청 허가를 통해 합법적으로 신축 또는 전환 가능',
+      // Why ADU
+      'why.label':  'WHY NOW',
+      'why.title':  '왜 지금 ADU를 검토해야 할까요?',
+      'why.desc':   '법규 완화 흐름, 주택 수요 증가, 자산 전략의 변화 속에서 ADU는 워싱턴주 주택 소유자에게 현실적인 옵션이 되고 있습니다.',
+      'why1.title': '부지 활용도 확대',
+      'why1.desc':  '이미 소유한 부지의 활용 가능성을 높일 수 있습니다. 기존 차고, 지하실, 빈 마당 등 활용되지 않던 공간을 생산적인 거주 공간으로 전환하는 방법을 검토해볼 수 있습니다.',
+      'why2.title': '임대수익 가능성',
+      'why2.desc':  '완공 후 임대를 통해 월 임대 수익을 기대해볼 수 있습니다. 워싱턴주 주요 도시의 주거 수요를 고려할 때, ADU는 임대 자산으로서의 가능성을 검토해볼 만한 옵션입니다.',
+      'why3.title': '자산가치·활용도 상승 가능성',
+      'why3.desc':  'ADU가 포함된 부지는 향후 매각 시 활용 가능성이 더 높은 자산으로 인식될 수 있습니다. 다양한 활용 방식을 통해 장기적 자산 전략을 검토해보실 수 있습니다.',
+      'why4.title': '법규 완화 흐름',
+      'why4.desc':  '워싱턴주는 주거 부족 문제 해결을 위해 ADU 관련 규정을 완화하는 방향으로 법령을 개정해왔습니다. 이 흐름이 어떤 의미인지, 내 부지에 어떻게 적용되는지 확인해보는 것이 좋습니다.',
+      // WA Law
+      'law.label':      'WA STATE LAW',
+      'law.title':      '워싱턴주 ADU 법령,<br />무엇이 달라졌나요?',
+      'law.desc':       '워싱턴주는 최근 주거 부족 문제를 해결하기 위해 ADU 관련 법령을 지속적으로 완화하는 방향으로 개정해왔습니다. 다만 이는 주(State) 차원의 방향이며, 실제 적용은 거주 지역의 city/county 규정을 함께 확인해야 합니다.',
+      'law.note.title': '중요 안내',
+      'law.note.desc':  '아래 내용은 일반적인 방향성을 안내하는 것으로, 모든 부지에 자동 적용되지 않습니다. 조닝, UGA 여부, sewer/septic 연결, Critical Area 등 부지별 조건을 반드시 사전에 검토하시기 바랍니다.',
+      'law.cta':        '내 부지 검토 요청하기',
+      'law1.title':     '복수 ADU 허용 방향 확대',
+      'law1.desc':      '단독주택 부지에 1개 이상의 ADU를 허용하는 방향으로 법령이 변화하고 있습니다.',
+      'law2.title':     'Owner-Occupancy 의무 완화 방향',
+      'law2.desc':      '집주인이 반드시 같은 부지에 거주해야 하는 의무가 완화되는 추세입니다.',
+      'law3.title':     '면적 제한 완화 흐름',
+      'law3.desc':      'ADU 최대 면적 제한이 완화되어 더 실용적인 규모의 유닛 설계가 가능해지고 있습니다.',
+      'law4.title':     '주차 규정 완화 가능',
+      'law4.desc':      '일부 지역에서 ADU 건축 시 추가 주차 공간 의무 조항이 완화되고 있습니다.',
+      'law5.title':     '기존 구조물 전환 허용 강화',
+      'law5.desc':      '차고, 지하실, 다락 등 기존 구조물을 ADU로 전환하는 허용 범위가 넓어지고 있습니다.',
+      'law6.title':     '개발부담금 제한 논의',
+      'law6.desc':      'ADU에 부과되는 각종 비용 및 부담금 기준을 제한하는 방향의 법률적 논의가 진행 중입니다.',
+      // ADU Types
+      'types.label':  'ADU TYPES',
+      'types.title':  '어떤 유형의 ADU가 가능할까요?',
+      'types.desc':   '부지 조건과 목적에 따라 다양한 유형의 ADU를 검토할 수 있습니다. 어떤 유형이 내 상황에 적합한지 함께 확인해보세요.',
+      'type1.title':  '독립 별채 ADU',
+      'type1.desc':   '본채와 완전히 분리된 독립 건물로 마당에 신축하는 유형',
+      'type1.fit':    '넓은 마당이 있는 부지에 적합',
+      'type2.title':  '부속 증축형 ADU',
+      'type2.desc':   '본채에 연결된 형태로 증축하여 별도 출입구를 갖는 유형',
+      'type2.fit':    '부지가 넓지 않아도 검토 가능',
+      'type3.title':  '차고 전환형 ADU',
+      'type3.desc':   '기존 차고 공간을 리모델링해 거주 공간으로 전환하는 유형',
+      'type3.fit':    '기존 차고 보유 시 비용 효율적',
+      'type4.title':  '지하층 전환형 ADU',
+      'type4.desc':   '기존 지하실 공간을 리모델링해 독립 거주 공간으로 만드는 유형',
+      'type4.fit':    '지하층 보유 주택에 적합',
+      'type5.title':  '차고 위층 ADU',
+      'type5.desc':   '차고 상층부 공간을 활용해 독립 주거 유닛을 만드는 유형',
+      'type5.fit':    '마당 공간 확보에 유리',
+      'type6.title':  '홈 어디션형 ADU',
+      'type6.desc':   '본채에 새로운 공간을 추가 증축하여 ADU를 만드는 유형',
+      'type6.fit':    '본채 구조 활용 가능한 경우',
+      // Use Cases
+      'use.label':  'USE CASES',
+      'use.title':  'ADU는 이렇게 활용할 수 있습니다',
+      'use.desc':   'ADU는 단순한 증축이 아니라 주거 전략이자 자산 활용 방법입니다. 내 상황에 맞는 활용 시나리오를 찾아보세요.',
+      'use1.title': '임대수익형',
+      'use1.desc':  '장기 임대 또는 단기 임대를 통해 추가 임대 소득을 기대해볼 수 있습니다. 모기지 부담 완화, 생활비 보완 등 다양한 재무적 효과를 검토해보세요.',
+      'use2.title': '가족 거주형',
+      'use2.desc':  '부모님, 성인 자녀, 친인척이 같은 부지 안에서 가까이 살면서도 각자의 독립적인 공간을 유지할 수 있는 멀티제너레이션 주거 방식입니다.',
+      'use3.title': '세대 분리형',
+      'use3.desc':  '같은 부지 안에서 완전히 독립된 별채를 통해 세대 간 프라이버시를 확보하면서도 가족 가까이 거주할 수 있는 형태입니다.',
+      'use4.title': '미래 대비형',
+      'use4.desc':  '지금 당장 사용하지 않더라도 향후 필요에 따라 임대, 가족 거주, 재택근무 공간 등으로 유연하게 활용할 수 있는 장기적 선택입니다.',
+      'use5.title': '장기 자산 전략형',
+      'use5.desc':  'ADU가 있는 부지는 매각 시 다양한 활용 가능성으로 시장에서 주목받을 수 있습니다. 장기적 자산 포트폴리오 관점에서 검토해보세요.',
+      // Process
+      'proc.label':  'PROCESS',
+      'proc.title':  'ADU는 어떤 순서로 진행되나요?',
+      'proc.desc':   '복잡해 보이는 ADU 프로젝트, 단계별로 정리하면 훨씬 명확해집니다. Alabaster가 각 단계에서 함께합니다.',
+      'proc1.title': '부지 적합성 및 조닝 검토',
+      'proc1.desc':  '부지 주소와 기본 정보를 바탕으로 ADU 건축이 가능한 조건인지 확인합니다. 조닝, UGA(도시성장경계), lot size, sewer/septic 여부 등 핵심 항목을 검토합니다.',
+      'proc1.c1':    '조닝 코드 확인',
+      'proc1.c2':    'Lot 크기 검토',
+      'proc1.c3':    '인프라 조건 확인',
+      'proc2.title': '예산 및 금융 구조 검토',
+      'proc2.desc':  '예상 공사비 범위를 파악하고, 융자 가능 여부 및 금융 구조를 함께 검토합니다. ADU 전용 융자 상품, 리파이낸싱 가능성 등 다양한 옵션을 안내해드립니다.',
+      'proc2.c1':    '예상 공사비 산정',
+      'proc2.c2':    '융자 옵션 검토',
+      'proc2.c3':    '사업성 분석',
+      'proc3.title': '설계 및 인허가 준비',
+      'proc3.desc':  '검증된 건축사 파트너와 연계하여 ADU 설계를 진행하고, 허가 신청에 필요한 도면 및 서류를 준비합니다.',
+      'proc3.c1':    '건축사 파트너 연계',
+      'proc3.c2':    '설계 도면 작성',
+      'proc3.c3':    '허가 서류 준비',
+      'proc4.title': '허가 접수 및 보완 대응',
+      'proc4.desc':  '관할 구청에 허가를 접수하고, 심사 과정에서 발생하는 보완 요청 및 수정 사항에 신속하게 대응합니다.',
+      'proc4.c1':    '허가 접수 대행',
+      'proc4.c2':    '보완 사항 대응',
+      'proc4.c3':    '진행 상황 모니터링',
+      'proc5.title': '시공 및 공정 관리',
+      'proc5.desc':  '검증된 시공 파트너와 연계하여 공사를 진행합니다. 공정별 진행 상황을 지속적으로 모니터링하며 품질과 일정을 관리합니다.',
+      'proc5.c1':    '시공사 파트너 연계',
+      'proc5.c2':    '공정 일정 관리',
+      'proc5.c3':    '품질 체크포인트',
+      'proc6.title': '완공 후 활용 계획',
+      'proc6.desc':  'ADU 완공 이후 임대 운영, 가족 입주, 향후 매각 등 활용 계획을 함께 정리합니다. 완공이 끝이 아니라 시작이 되도록 도와드립니다.',
+      'proc6.c1':    '임대 운영 가이드',
+      'proc6.c2':    '자산 활용 전략',
+      // Checklist
+      'chk.label':      'CHECKLIST',
+      'chk.title':      'ADU를 준비하려면 무엇부터 해야 할까요?',
+      'chk.intro':      '상담 전에 아래 정보를 미리 파악해두시면 더 빠르고 정확한 사전 검토가 가능합니다. 모든 항목을 다 알지 못해도 괜찮습니다. 함께 확인해드립니다.',
+      'chk1.title':     '부지 주소',
+      'chk1.hint':      '조닝 및 UGA 여부 확인에 필수',
+      'chk2.title':     'Lot Size (부지 면적)',
+      'chk2.hint':      'ADU 허용 면적 계산의 기준',
+      'chk3.title':     '현재 주택 면적 및 연식',
+      'chk3.hint':      '기존 구조 활용 가능성 판단',
+      'chk4.title':     '차고 / 지하실 / 별채 여부',
+      'chk4.hint':      '기존 구조물 전환 가능성 검토',
+      'chk5.title':     'Sewer / Septic 연결 여부',
+      'chk5.hint':      '인프라 확장 비용 및 가능성에 영향',
+      'chk6.title':     '경사 / 습지 등 지형 특이사항',
+      'chk6.hint':      'Critical Area 여부 및 공사 난이도 판단',
+      'chk7.title':     'ADU 활용 목적',
+      'chk7.hint':      '임대 / 가족 거주 / 자산 전략 등',
+      'chk8.title':     '예산 범위 (대략)',
+      'chk8.hint':      '공사비 및 융자 가능 범위 파악에 도움',
+      'chk9.title':     '융자 관심 여부',
+      'chk9.hint':      'ADU 전용 융자 옵션 안내 여부 결정',
+      'chk10.title':    '희망 ADU 유형',
+      'chk10.hint':     '별채 / 차고 개조 / 지하층 등',
+      'chk.cta.title':  '준비가 됐다면, 무료 사전 검토를 받아보세요',
+      'chk.cta.desc':   '모든 항목을 다 몰라도 괜찮습니다. 함께 확인해드립니다.',
+      'chk.cta.btn':    '무료 ADU 사전 검토 요청하기',
+      // Services
+      'svc.label':   'OUR SERVICES',
+      'svc.title':   'Alabaster는 무엇을 도와드리나요?',
+      'svc.desc':    '부지 검토부터 예산 설계, 금융 구조, 허가, 시공 관리까지 ADU 프로젝트의 전 과정을 원스탑으로 안내해드립니다.',
+      'svc1.title':  '부지 적합성 검토',
+      'svc1.desc':   '조닝, UGA, lot size, sewer/septic 연결 여부, Critical Area 등 ADU 건축 가능성을 판단하는 핵심 조건들을 체계적으로 검토합니다.',
+      'svc2.title':  '예산·사업성 검토',
+      'svc2.desc':   'ADU 유형별 예상 공사비 범위를 파악하고, 임대 수익 가능성 및 전반적인 사업성을 함께 검토하여 현실적인 계획 수립을 돕습니다.',
+      'svc3.title':  '금융 구조 검토',
+      'svc3.desc':   'ADU 전용 융자, 리파이낸싱, HELoan/HELOC 등 다양한 금융 옵션을 안내해드립니다. 융자 가능 여부 및 조건을 함께 확인해보세요.',
+      'svc4.title':  '허가·진행 프로세스 안내',
+      'svc4.desc':   '설계부터 허가 접수, 보완 대응까지 복잡한 인허가 과정을 단계별로 안내하고 파트너 건축사와 연계하여 지원합니다.',
+      'svc5.title':  '검증된 파트너 연계',
+      'svc5.desc':   '건축사, 시공사, 금융 파트너 등 ADU 프로젝트에 필요한 전문 파트너 네트워크를 통해 신뢰할 수 있는 팀을 연결해드립니다.',
+      'svc.btn':     '서비스 상담 신청하기',
+      // FAQ
+      'faq.label':    'FAQ',
+      'faq.title':    '자주 묻는 질문',
+      'faq.desc':     'ADU를 처음 접하는 분들이 가장 많이 물어보는 질문들을 모았습니다.',
+      'faq1.q':       'Q. 제 집에도 ADU를 지을 수 있나요?',
+      'faq1.a':       'ADU 건축 가능 여부는 부지의 조닝, UGA(도시성장경계) 포함 여부, lot size, sewer/septic 연결 조건, Critical Area 여부 등 다양한 요소에 따라 달라집니다. 워싱턴주 전체에 일괄 적용되는 기준이 아니라 지역별, 부지별로 확인이 필요합니다. 무료 사전 검토를 통해 빠르게 가능 여부를 확인해보세요.',
+      'faq2.q':       'Q. 워싱턴주에서 ADU를 몇 개까지 지을 수 있나요?',
+      'faq2.a':       '워싱턴주 법령은 복수의 ADU를 허용하는 방향으로 개정되어 왔으나, 실제 허용 개수는 해당 city/county의 조닝 코드에 따라 달라집니다. 일부 지역은 1개, 일부는 2개 이상을 허용하는 경우도 있습니다.',
+      'faq3.q':       'Q. 반드시 집주인이 같은 부지에 살아야 하나요?',
+      'faq3.a':       'Owner-Occupancy(집주인 거주 의무) 규정은 지역에 따라 다르며, 워싱턴주 내 많은 지역에서 이 의무가 완화되는 추세입니다. 그러나 일부 지역에서는 여전히 적용될 수 있으므로, 해당 city/county 규정을 반드시 확인하셔야 합니다.',
+      'faq4.q':       'Q. 차고를 ADU로 개조할 수 있나요?',
+      'faq4.a':       '가능한 경우가 많습니다. 기존 차고를 거주 공간으로 전환하는 Garage Conversion ADU는 비교적 비용 효율적인 방법 중 하나로 많이 검토됩니다. 다만 구조 검토, 단열·전기·배관 업그레이드, 허가 조건 충족 여부 등을 사전에 확인해야 합니다.',
+      'faq5.q':       'Q. ADU를 지으면 주차 공간을 추가로 만들어야 하나요?',
+      'faq5.a':       '워싱턴주의 많은 지역에서 ADU 추가에 따른 의무 주차 공간 확보 규정이 완화되고 있습니다. 특히 대중교통 접근이 좋은 지역에서는 주차 규정이 더 유연하게 적용될 수 있습니다.',
+      'faq6.q':       'Q. ADU 공사 비용은 얼마나 드나요?',
+      'faq6.a':       'ADU 공사 비용은 유형, 규모, 위치, 설계 복잡도, 인프라 조건 등에 따라 큰 폭의 차이가 있습니다. 일반적으로 차고 전환형은 신축형보다 비용이 낮은 편이며, 정확한 예산 범위는 부지 조건과 유형을 확인한 후 안내해드릴 수 있습니다.',
+      'faq7.q':       'Q. ADU 건축을 위한 융자도 가능한가요?',
+      'faq7.a':       '네, 다양한 융자 옵션이 있습니다. ADU 전용 융자 프로그램, 기존 주택을 활용한 HELOC/HELoan, Cash-out Refinancing 등 상황에 따라 적합한 금융 구조가 다릅니다. 융자 가능 여부와 조건은 개별 상담을 통해 확인하시기 바랍니다.',
+      'faq.cta.q':    '더 궁금한 점이 있으신가요?',
+      'faq.cta.btn':  '상담 요청하기',
+      // Contact CTA
+      'cta.label':  '무료 사전 검토',
+      'cta.title':  '무료 ADU 사전 검토를<br />받아보세요',
+      'cta.desc':   '내 부지에 ADU가 가능한지, 예상 비용은 어느 정도인지, 융자 가능성은 있는지 — 한국어로 편하게 확인해보세요.',
+      'cta.btn1':   '무료 상담 신청',
+      'cta.btn2':   '전화 문의하기',
+      'cta.btn3':   '이메일 문의',
+      'cta.info2':  '실시간 상담 가능',
+      // Disclaimer
+      'disclaimer': '<strong>면책 고지:</strong> 본 웹사이트의 모든 정보는 일반적인 안내 목적으로 제공되며, 법률·금융 자문을 구성하지 않습니다. ADU 허가 가능 여부는 부지 조건, 관할 지역 규정, 인프라 조건 등에 따라 달라질 수 있으며, 동일한 결과를 보장하지 않습니다. 금융 조건은 신청인의 자격 요건 및 금융기관 심사 기준에 따라 달라질 수 있습니다. 최종 의사결정 전에 관련 전문가와 개별 상담을 받으시기 바랍니다.',
+      // Footer
+      'footer.tagline': '워싱턴주 ADU 원스탑 솔루션.<br />부지 검토부터 금융, 허가, 시공까지<br />편하게 함께합니다.',
+      'footer.col1':    '서비스',
+      'footer.col2':    '정보',
+      'footer.col3':    '상담',
+      'footer.l1.1':    'ADU란 무엇인가',
+      'footer.l1.2':    'ADU 유형',
+      'footer.l1.3':    '진행 절차',
+      'footer.l1.4':    'Alabaster 서비스',
+      'footer.l1.5':    '준비 체크리스트',
+      'footer.l2.1':    '왜 지금 ADU인가',
+      'footer.l2.2':    '워싱턴주 법령 안내',
+      'footer.l2.3':    '활용 시나리오',
+      'footer.l2.4':    '자주 묻는 질문',
+      'footer.l3.1':    '무료 사전 검토 신청',
+      'footer.l3.2':    '전화 문의',
+      'footer.l3.3':    '이메일 문의',
+      'footer.privacy': '개인정보처리방침',
+      'footer.terms':   '이용약관',
+      'footer.contact': '문의하기',
+      // Modal
+      'modal.title':         '무료 ADU 사전 검토 신청',
+      'modal.desc':          '아래 정보를 입력하시면 담당 컨설턴트가 연락드립니다.<br /><strong>모든 상담은 무료</strong>이며, 부담 없이 신청하세요.',
+      'modal.name':          '이름',
+      'modal.phone':         '연락처',
+      'modal.email':         '이메일',
+      'modal.address':       '부지 주소 (대략적으로도 가능)',
+      'modal.aduType':       '관심 ADU 유형',
+      'modal.budget':        '예산 범위',
+      'modal.financing':     '융자 상담 관심 여부',
+      'modal.message':       '상담 내용 / 추가 문의',
+      'modal.submit':        '무료 사전 검토 신청하기',
+      'modal.privacy':       '개인정보는 상담 목적으로만 사용되며 외부에 제공되지 않습니다.',
+      'modal.opt.select':    '선택 (선택 사항)',
+      'modal.opt.detached':  '독립 별채 (Detached)',
+      'modal.opt.attached':  '부속 증축형 (Attached)',
+      'modal.opt.garage':    '차고 전환 (Garage Conversion)',
+      'modal.opt.basement':  '지하층 전환 (Basement)',
+      'modal.opt.above':     '차고 위층 (Above Garage)',
+      'modal.opt.addition':  '홈 어디션 (Addition)',
+      'modal.opt.unknown':   '아직 모르겠음',
+      'modal.bud.1':         '$150,000 이하',
+      'modal.bud.2':         '$150,000 – $300,000',
+      'modal.bud.3':         '$300,000 – $500,000',
+      'modal.bud.4':         '$500,000 이상',
+      'modal.fin.yes':       '네, 융자 옵션이 궁금합니다',
+      'modal.fin.no':        '아니요, 자가 자금으로 계획 중입니다',
+      'modal.success.title': '신청이 완료되었습니다!',
+      'modal.success.desc':  '담당 컨설턴트가 1~2 영업일 내에<br />연락드리겠습니다.<br /><br />감사합니다! 🙏',
+    },
+
+    en: {
+      // Nav
+      'nav.about':    'What is ADU?',
+      'nav.types':    'ADU Types',
+      'nav.process':  'Process',
+      'nav.services': 'Services',
+      'nav.faq':      'FAQ',
+      'nav.cta':      'Free Consultation',
+      // Hero
+      'hero.eyebrow':     'One-Stop ADU Solution',
+      'hero.h1':          'From Site Review to<br />Financing, Permits,<br /><em>Construction — All in One</em>',
+      'hero.desc':        'Find out if your property qualifies for an ADU,<br />estimated costs, and financing options.<br />Washington State ADU Specialists — Alabaster.',
+      'hero.cta1':        'Free ADU Pre-Review',
+      'hero.cta2':        'Check My Property',
+      'hero.badge1':      'Zoning Review',
+      'hero.badge2':      'Financing Guide',
+      'hero.badge3':      'Permit & Construction',
+      'hero.card.label':  '6-Step One-Stop Process',
+      'hero.step1':       'Site Review',
+      'hero.step2':       'Budget & Finance',
+      'hero.step3':       'Design & Permit',
+      'hero.step4':       'Build & Complete',
+      // About ADU
+      'about.label':  'WHAT IS ADU',
+      'about.title':  'What Is an ADU?',
+      'about.desc':   'An <strong>ADU (Accessory Dwelling Unit)</strong> is a self-contained residential unit added to an existing property. It can take the form of a detached cottage, garage conversion, basement unit, and more — providing a fully independent living space.',
+      'feat1.title':  'Sleeping Space',
+      'feat1.desc':   'A complete dwelling unit with an independent bedroom or sleeping area',
+      'feat2.title':  'Bathroom',
+      'feat2.desc':   'Equipped with a private bathroom for fully independent living',
+      'feat3.title':  'Kitchen',
+      'feat3.desc':   'Includes an independent kitchen or cooking facilities',
+      'feat4.title':  'Separate Entry',
+      'feat4.desc':   'Separate entrance from the main house for independent access',
+      'feat5.title':  'Independent Living',
+      'feat5.desc':   'A fully self-sufficient living unit separate from the main home',
+      'feat6.title':  'Permitted Construction',
+      'feat6.desc':   'Legally built or converted through proper municipal permits',
+      // Why ADU
+      'why.label':  'WHY NOW',
+      'why.title':  'Why Consider an ADU Now?',
+      'why.desc':   'With relaxed regulations, growing housing demand, and evolving asset strategies, ADUs have become a realistic option for Washington State homeowners.',
+      'why1.title': 'Maximize Your Property',
+      'why1.desc':  'Unlock the potential of land you already own. Unused garages, basements, or backyards can be converted into productive living spaces.',
+      'why2.title': 'Rental Income Potential',
+      'why2.desc':  'After completion, you can generate monthly rental income. Given housing demand in Washington State cities, an ADU is worth exploring as a rental asset.',
+      'why3.title': 'Increased Property Value',
+      'why3.desc':  'Properties with ADUs may be perceived as higher-value assets upon resale. Explore long-term asset strategies through various utilization options.',
+      'why4.title': 'Relaxing Regulations',
+      'why4.desc':  'Washington State has been revising ADU regulations to address housing shortages. It\'s worth understanding what this trend means for your specific property.',
+      // WA Law
+      'law.label':      'WA STATE LAW',
+      'law.title':      'Washington State ADU Law:<br />What Has Changed?',
+      'law.desc':       'Washington State has been steadily relaxing ADU regulations to address housing shortages. However, these are state-level directions — actual application depends on your local city/county codes.',
+      'law.note.title': 'Important Notice',
+      'law.note.desc':  'The information below is for general guidance only and does not automatically apply to all properties. Zoning, UGA status, sewer/septic connection, Critical Area designation, and other site-specific conditions must be reviewed individually.',
+      'law.cta':        'Request a Site Review',
+      'law1.title':     'Multiple ADUs Allowed',
+      'law1.desc':      'Regulations are shifting to allow more than one ADU per single-family lot.',
+      'law2.title':     'Owner-Occupancy Requirements Easing',
+      'law2.desc':      'The requirement for owners to live on the same property is being relaxed in many areas.',
+      'law3.title':     'Size Restrictions Relaxing',
+      'law3.desc':      'Maximum ADU size restrictions are being loosened, allowing more practical unit designs.',
+      'law4.title':     'Parking Requirements Easing',
+      'law4.desc':      'Some areas are relaxing mandatory additional parking requirements for ADU construction.',
+      'law5.title':     'Expanded Conversion Allowances',
+      'law5.desc':      'Garages, basements, and attics are increasingly permitted for ADU conversion.',
+      'law6.title':     'Development Fees Being Limited',
+      'law6.desc':      'Legislation is being discussed to cap impact fees and other charges imposed on ADU projects.',
+      // ADU Types
+      'types.label':  'ADU TYPES',
+      'types.title':  'What Types of ADU Are Available?',
+      'types.desc':   'Depending on your property conditions and goals, there are various ADU types to consider. Let\'s find out which one fits your situation.',
+      'type1.title':  'Detached ADU',
+      'type1.desc':   'A fully separate structure built in the yard, completely independent from the main home',
+      'type1.fit':    'Best for properties with a large yard',
+      'type2.title':  'Attached ADU',
+      'type2.desc':   'An addition connected to the main house with a separate entrance',
+      'type2.fit':    'Viable even on smaller lots',
+      'type3.title':  'Garage Conversion ADU',
+      'type3.desc':   'Remodeling an existing garage into a livable residential space',
+      'type3.fit':    'Cost-effective if you already have a garage',
+      'type4.title':  'Basement ADU',
+      'type4.desc':   'Converting an existing basement into an independent living unit',
+      'type4.fit':    'Ideal for homes with an existing basement',
+      'type5.title':  'Above-Garage ADU',
+      'type5.desc':   'Using the space above the garage to create an independent residential unit',
+      'type5.fit':    'Preserves yard space',
+      'type6.title':  'Home Addition ADU',
+      'type6.desc':   'Adding a new section to the main structure to create an ADU',
+      'type6.fit':    'Leverages the existing home structure',
+      // Use Cases
+      'use.label':  'USE CASES',
+      'use.title':  'How Can You Use an ADU?',
+      'use.desc':   'An ADU is more than just an addition — it\'s a housing strategy and an asset tool. Find the use case that fits your situation.',
+      'use1.title': 'Rental Income',
+      'use1.desc':  'Generate extra income through long-term or short-term rentals. Offset your mortgage and explore various financial benefits.',
+      'use2.title': 'Multigenerational Living',
+      'use2.desc':  'Keep parents, adult children, or relatives close while maintaining independent spaces — the ideal multigenerational living arrangement.',
+      'use3.title': 'Privacy Living',
+      'use3.desc':  'Maintain full privacy through a completely separate unit on the same property while staying close to family.',
+      'use4.title': 'Future Flexibility',
+      'use4.desc':  'Even if not immediately needed, an ADU can flexibly serve as a rental, family space, or home office — a smart long-term choice.',
+      'use5.title': 'Long-Term Asset Strategy',
+      'use5.desc':  'Properties with ADUs may attract buyers due to versatile use potential. Consider it from a long-term asset portfolio perspective.',
+      // Process
+      'proc.label':  'PROCESS',
+      'proc.title':  'How Does the ADU Process Work?',
+      'proc.desc':   'The ADU process may seem complex, but breaking it into steps makes it clear. Alabaster guides you through every stage.',
+      'proc1.title': 'Site Suitability & Zoning Review',
+      'proc1.desc':  'Based on your property address and basic information, we verify whether ADU construction is feasible. We review key factors including zoning, UGA (Urban Growth Area), lot size, and sewer/septic conditions.',
+      'proc1.c1':    'Zoning Code Check',
+      'proc1.c2':    'Lot Size Review',
+      'proc1.c3':    'Infrastructure Assessment',
+      'proc2.title': 'Budget & Financing Review',
+      'proc2.desc':  'We assess the estimated construction cost range and review financing options together. We guide you through ADU-specific loan programs, refinancing options, and more.',
+      'proc2.c1':    'Cost Estimation',
+      'proc2.c2':    'Loan Options Review',
+      'proc2.c3':    'Feasibility Analysis',
+      'proc3.title': 'Design & Permit Preparation',
+      'proc3.desc':  'We coordinate with vetted architect partners to develop your ADU design and prepare all drawings and documents required for permit application.',
+      'proc3.c1':    'Architect Partner Referral',
+      'proc3.c2':    'Architectural Drawings',
+      'proc3.c3':    'Permit Document Prep',
+      'proc4.title': 'Permit Submission & Response',
+      'proc4.desc':  'We submit the permit application to the local authority and respond promptly to any revision requests throughout the review process.',
+      'proc4.c1':    'Permit Submission',
+      'proc4.c2':    'Revision Response',
+      'proc4.c3':    'Progress Monitoring',
+      'proc5.title': 'Construction & Project Management',
+      'proc5.desc':  'We coordinate with vetted construction partners and continuously monitor progress to manage quality and schedule throughout the build.',
+      'proc5.c1':    'Builder Referral',
+      'proc5.c2':    'Schedule Management',
+      'proc5.c3':    'Quality Checkpoints',
+      'proc6.title': 'Post-Completion Planning',
+      'proc6.desc':  'After your ADU is complete, we help you plan for rental operation, family move-in, or future sale. Completion is just the beginning.',
+      'proc6.c1':    'Rental Operation Guide',
+      'proc6.c2':    'Asset Strategy',
+      // Checklist
+      'chk.label':     'CHECKLIST',
+      'chk.title':     'What Do You Need to Prepare for an ADU?',
+      'chk.intro':     'Having this information before your consultation allows for a faster and more accurate pre-review. Don\'t worry if you don\'t know everything — we\'ll help you figure it out.',
+      'chk1.title':    'Property Address',
+      'chk1.hint':     'Essential for verifying zoning and UGA status',
+      'chk2.title':    'Lot Size',
+      'chk2.hint':     'Basis for calculating allowable ADU square footage',
+      'chk3.title':    'Home Size & Year Built',
+      'chk3.hint':     'Determines feasibility of using existing structures',
+      'chk4.title':    'Garage / Basement / Cottage',
+      'chk4.hint':     'Assesses existing structure conversion potential',
+      'chk5.title':    'Sewer / Septic Connection',
+      'chk5.hint':     'Affects infrastructure expansion costs and feasibility',
+      'chk6.title':    'Slope / Wetland / Terrain Issues',
+      'chk6.hint':     'Determines Critical Area status and construction difficulty',
+      'chk7.title':    'Intended ADU Use',
+      'chk7.hint':     'Rental / Family Living / Asset Strategy, etc.',
+      'chk8.title':    'Approximate Budget',
+      'chk8.hint':     'Helps determine construction cost and financing range',
+      'chk9.title':    'Interest in Financing',
+      'chk9.hint':     'Determines whether to include ADU-specific loan options',
+      'chk10.title':   'Preferred ADU Type',
+      'chk10.hint':    'Cottage / Garage Conversion / Basement, etc.',
+      'chk.cta.title': 'Ready? Get Your Free ADU Pre-Review',
+      'chk.cta.desc':  'You don\'t need to know everything. We\'ll help you figure it out together.',
+      'chk.cta.btn':   'Request Free ADU Pre-Review',
+      // Services
+      'svc.label':   'OUR SERVICES',
+      'svc.title':   'How Can Alabaster Help You?',
+      'svc.desc':    'From site review to budget planning, financing, permits, and construction management — we guide you through every step of your ADU project.',
+      'svc1.title':  'Site Feasibility Review',
+      'svc1.desc':   'We systematically evaluate key conditions including zoning, UGA, lot size, sewer/septic connection, and Critical Area status to assess ADU construction feasibility.',
+      'svc2.title':  'Budget & Feasibility Analysis',
+      'svc2.desc':   'We assess estimated construction costs by ADU type and evaluate rental income potential and overall project feasibility to support realistic planning.',
+      'svc3.title':  'Financing Structure Review',
+      'svc3.desc':   'We guide you through ADU-specific loans, refinancing, HELoan/HELOC, and other financing options. Let\'s review your eligibility and terms together.',
+      'svc4.title':  'Permit & Process Guidance',
+      'svc4.desc':   'From design through permit submission and revision response, we walk you through the complex permitting process step by step with our architect partners.',
+      'svc5.title':  'Trusted Partner Network',
+      'svc5.desc':   'Through our network of vetted architects, builders, and financial partners, we connect you with a reliable team for your ADU project.',
+      'svc.btn':     'Schedule a Consultation',
+      // FAQ
+      'faq.label':    'FAQ',
+      'faq.title':    'Frequently Asked Questions',
+      'faq.desc':     'Here are the most common questions from those new to ADUs.',
+      'faq1.q':       'Q. Can I build an ADU on my property?',
+      'faq1.a':       'ADU feasibility depends on various factors including zoning, UGA (Urban Growth Area) status, lot size, sewer/septic conditions, and Critical Area designation. Requirements vary by location and property — contact us for a free pre-review.',
+      'faq2.q':       'Q. How many ADUs can I build in Washington State?',
+      'faq2.a':       'Washington State law has been moving toward allowing multiple ADUs, but the actual number permitted depends on your local city/county zoning code. Some areas allow one, others allow two or more.',
+      'faq3.q':       'Q. Does the owner have to live on the property?',
+      'faq3.a':       'Owner-occupancy requirements vary by location. Many areas in Washington State have relaxed this requirement, but some jurisdictions may still require it. Always verify with your local city/county.',
+      'faq4.q':       'Q. Can I convert my garage into an ADU?',
+      'faq4.a':       'In many cases, yes. Garage Conversion ADUs are often a cost-effective option. However, structural review, insulation/electrical/plumbing upgrades, and permit compliance must all be verified beforehand.',
+      'faq5.q':       'Q. Do I need to add parking if I build an ADU?',
+      'faq5.a':       'Many areas in Washington State have relaxed mandatory parking requirements for ADUs, especially in areas with good transit access. However, requirements vary by location.',
+      'faq6.q':       'Q. How much does it cost to build an ADU?',
+      'faq6.a':       'ADU costs vary widely depending on type, size, location, design complexity, and infrastructure conditions. Garage conversions tend to be less expensive than new detached structures. We can provide a more accurate estimate after reviewing your site.',
+      'faq7.q':       'Q. Can I get a loan to build an ADU?',
+      'faq7.a':       'Yes, there are various financing options available — including ADU-specific loan programs, HELOC/HELoan, and Cash-out Refinancing. Eligibility and terms vary based on your financial profile and property value. Please contact us for a personalized consultation.',
+      'faq.cta.q':    'Have more questions?',
+      'faq.cta.btn':  'Contact Us',
+      // Contact CTA
+      'cta.label':  'Free Pre-Review',
+      'cta.title':  'Get Your Free<br />ADU Pre-Review',
+      'cta.desc':   'Find out if your property qualifies for an ADU, estimated costs, and financing options — all in one free consultation.',
+      'cta.btn1':   'Free Consultation',
+      'cta.btn2':   'Call Us',
+      'cta.btn3':   'Email Us',
+      'cta.info2':  'Real-Time Consultation Available',
+      // Disclaimer
+      'disclaimer': '<strong>Disclaimer:</strong> All information on this website is provided for general informational purposes only and does not constitute legal or financial advice. ADU permit eligibility may vary based on site conditions, local regulations, and infrastructure requirements. Financial terms are subject to individual qualifications and lender criteria. Please consult qualified professionals before making any decisions.',
+      // Footer
+      'footer.tagline': 'Washington State One-Stop ADU Solution.<br />From site review to financing, permits,<br />and construction — we\'ve got you covered.',
+      'footer.col1':    'Services',
+      'footer.col2':    'Info',
+      'footer.col3':    'Consultation',
+      'footer.l1.1':    'What is ADU',
+      'footer.l1.2':    'ADU Types',
+      'footer.l1.3':    'Process',
+      'footer.l1.4':    'Our Services',
+      'footer.l1.5':    'Checklist',
+      'footer.l2.1':    'Why ADU Now',
+      'footer.l2.2':    'WA State Law',
+      'footer.l2.3':    'Use Cases',
+      'footer.l2.4':    'FAQ',
+      'footer.l3.1':    'Free Pre-Review',
+      'footer.l3.2':    'Call Us',
+      'footer.l3.3':    'Email Us',
+      'footer.privacy': 'Privacy Policy',
+      'footer.terms':   'Terms of Use',
+      'footer.contact': 'Contact',
+      // Modal
+      'modal.title':         'Free ADU Pre-Review Request',
+      'modal.desc':          'Fill out the form below and our consultant will reach out to you.<br /><strong>All consultations are free</strong> — no pressure.',
+      'modal.name':          'Name',
+      'modal.phone':         'Phone',
+      'modal.email':         'Email',
+      'modal.address':       'Site Address (approximate is fine)',
+      'modal.aduType':       'ADU Type of Interest',
+      'modal.budget':        'Budget Range',
+      'modal.financing':     'Interest in Financing',
+      'modal.message':       'Message / Additional Questions',
+      'modal.submit':        'Submit Free Pre-Review Request',
+      'modal.privacy':       'Your information is used solely for consultation purposes and will not be shared.',
+      'modal.opt.select':    'Select (optional)',
+      'modal.opt.detached':  'Detached ADU',
+      'modal.opt.attached':  'Attached ADU',
+      'modal.opt.garage':    'Garage Conversion',
+      'modal.opt.basement':  'Basement ADU',
+      'modal.opt.above':     'Above-Garage ADU',
+      'modal.opt.addition':  'Home Addition ADU',
+      'modal.opt.unknown':   'Not sure yet',
+      'modal.bud.1':         'Under $150,000',
+      'modal.bud.2':         '$150,000 – $300,000',
+      'modal.bud.3':         '$300,000 – $500,000',
+      'modal.bud.4':         'Over $500,000',
+      'modal.fin.yes':       'Yes, I\'m interested in loan options',
+      'modal.fin.no':        'No, planning to self-finance',
+      'modal.success.title': 'Request Submitted!',
+      'modal.success.desc':  'Our consultant will contact you<br />within 1–2 business days.<br /><br />Thank you! 🙏',
+    }
+  };
+
+
+  // ── Core apply function ──
+  function applyLanguage(lang) {
+    const t = TRANSLATIONS[lang];
+    if (!t) return;
+
+    // 1) data-i18n → textContent
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) {
+        el.textContent = t[key];
+      }
+    });
+
+    // 2) data-i18n-html → innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (t[key] !== undefined) {
+        el.innerHTML = t[key];
+      }
+    });
+
+    // 3) Update all lang buttons active state
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+
+    // 4) Update html lang attribute & page title
+    document.documentElement.lang = lang;
+    document.title = lang === 'en'
+      ? 'Alabaster ADU — One-Stop ADU Solution | Washington State ADU Consulting'
+      : 'Alabaster ADU — 원스탑 ADU 솔루션 | 워싱턴주 ADU 전문 컨설팅';
+
+    // 5) Save preference
+    try { localStorage.setItem('alabaster_lang', lang); } catch(e) {}
+
+    console.log(`🌐 Language switched to: ${lang === 'ko' ? '한국어' : 'English'}`);
+  }
+
+
+  // ── Attach click handlers to ALL lang buttons (nav + mobile) ──
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      applyLanguage(lang);
+    });
+  });
+
+
+  // ── Load saved language on page load ──
+  let savedLang = 'ko';
+  try { savedLang = localStorage.getItem('alabaster_lang') || 'ko'; } catch(e) {}
+  applyLanguage(savedLang);
+
+}); // end DOMContentLoaded
+</script>
+</body>
+</html>
