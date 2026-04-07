@@ -5,8 +5,6 @@
 부지 검토, 금융 구조, 허가, 시공 안내를 원스탑으로 제공하며 한국어/영어 이중 언어를 완전 지원합니다.
 
 **라이브 URL:** https://30c7ce3a-f794-4938-a8de-4d041faf63a6.vip.gensparksite.com  
-**관리자 페이지:** https://30c7ce3a-f794-4938-a8de-4d041faf63a6.vip.gensparksite.com/admin.html
-
 ---
 
 ## ✅ 완료된 기능
@@ -28,27 +26,14 @@
 - **서비스** — 5가지 서비스 카드
 - **FAQ** — 7개 아코디언 질문
 - **무료 상담 CTA** — 상담 신청 / 전화 / 이메일 버튼
-- **푸터** — 연락처, 사이트맵, 법적 링크, 관리자 링크
-- **상담 신청 모달** — 8개 필드 폼, API 연동 (tables/consultation_requests)
+- **푸터** — 연락처, 사이트맵, 법적 링크
+- **상담 신청 모달** — 8개 필드 폼, Google Apps Script 연동
 - **스크롤 진행바** — 상단 그라데이션 바
 - **스크롤 리빌 애니메이션** — IntersectionObserver 기반
 
-### 관리자 페이지 (admin.html)
-- **로그인** — ID: admin / PW: 1234 (클라이언트 사이드)
-- **대시보드 카드** — 총 문의, 오늘 문의, 융자 관심, 주요 ADU 유형
-- **문의 테이블** — 전체 상담 데이터 표시
-- **검색/필터** — 이름·이메일·주소 검색, ADU 유형·융자 관심 필터
-- **정렬** — 접수시간, 이름, ADU 유형 (오름/내림차순)
-- **상세 모달** — 👁️ 버튼으로 상세 정보 보기 및 삭제
-- **CSV 내보내기** — 현재 필터 기준 Excel 호환 CSV
-- **60초 자동 새로고침**
-
----
-
 ## 📁 파일 구조
-```
+``` 
 index.html          메인 랜딩 페이지 (한/영 이중 언어)
-admin.html          관리자 대시보드
 css/
   style.css         전체 스타일시트
 js/                 (JavaScript는 HTML 내 인라인 처리)
@@ -95,32 +80,16 @@ images/
 
 ---
 
-## 🗄️ 데이터 모델
+## 🗄️ 문의 데이터 처리
 
-### consultation_requests 테이블
-| 필드 | 타입 | 설명 |
-|---|---|---|
-| id | text | UUID (자동) |
-| name | text | 이름 |
-| phone | text | 연락처 |
-| email | text | 이메일 |
-| address | text | 부지 주소 |
-| aduType | text | ADU 유형 |
-| budget | text | 예산 범위 |
-| financing | text | 융자 관심 여부 |
-| message | text | 추가 문의 |
-| submittedAt | text | 제출 시각 (ISO) |
-| created_at | datetime | 자동 생성 |
-
-**API 엔드포인트:**  
-`POST tables/consultation_requests` — 신규 문의 등록  
-`GET tables/consultation_requests` — 전체 목록 조회  
-`DELETE tables/consultation_requests/{id}` — 삭제
+- 상담 폼은 Google Apps Script 웹앱으로 전송됩니다.
+- 접수 데이터는 Google Sheets에 저장됩니다.
+- 관리자 확인은 Google Sheets 또는 로컬 전용 관리자 파일에서 진행하는 것을 권장합니다.
 
 ---
 
 ## 🔧 다음 개선 제안
-- [ ] 관리자 페이지 서버 사이드 인증 (현재 클라이언트 사이드만)
+- [ ] 관리자용 별도 비공개 대시보드 구축
 - [ ] 이미지 최적화 (WebP 변환)
 - [ ] 메타 태그 SEO 강화 (lang별 hreflang)
 - [ ] Google Analytics 연동

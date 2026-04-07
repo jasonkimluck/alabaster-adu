@@ -12,11 +12,10 @@ This repository is prepared for GitHub Pages using the `docs/` folder.
    - `Folder`: `/docs`
 5. Save.
 
-## Published paths
+## Published path
 
 - Main site: `/docs/index.html`
-- Admin page: `/docs/admin.html`
 
 ## Important note
 
-`admin.html` is still only a convenience dashboard with client-side login. It should not be treated as a secure admin panel.
+Only the public marketing site should be published through GitHub Pages. Keep any admin/dashboard files outside the published `docs/` folder.

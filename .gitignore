@@ -8,3 +8,4 @@ server/node_modules/
 !.env.example
 dist/
 build/
+private-local/
